@@ -7,20 +7,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
 }
 
 .flexbox-column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: top;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    width: 100%;
+    height: 1080px;
 }
 
 .container {
     position: relative;
-    width: 500px;
-    height: 300px;
+    min-height: 100%;
+}
+
+.container-home {
+    position: relative;
+    width: 800px;
+    height: 500px;
     margin-top: 5em;
 
 }
@@ -37,5 +50,15 @@
 
 .header {
     text-align: right;
+
+}
+
+/*evidenzio i bordi della tabella per vedere meglio la struttura*/
+#projects>.container, #projects>.container * {
+    border-style: solid;
+    border-width: 1px;
+    margin: 0px;
+    padding: 0px;
+}
 
 }
