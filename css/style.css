@@ -34,3 +34,8 @@
     border-color: rgb(150, 150, 150);
     border-radius: 20px;
 }
+
+.header {
+    text-align: right;
+
+}
