@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+html {
+    border: 3px solid red;
+}
+
+body {
+
+    border: 3px solid green;
+}
+
 .flexbox-row {
     display: flex;
     flex-direction: row;
@@ -60,7 +69,7 @@
 }
 
 .card {
-    position: sticky;
+    position: relative;
     top: 0;
     width: 200px;
     height: 250px;
@@ -69,4 +78,22 @@
     border-width: 1px;
     border-color: rgb(150, 150, 150);
     border-radius: 20px;
+}
+
+.side-menu {
+    position: relative;
+    top: 0;
+    width: 200px;
+    padding: 30px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(150, 150, 150);
+    border-radius: 20px;
+}
+
+.main-warpper {
+    display: flex;
+    flex-direction: row-reverse;
+
 }
