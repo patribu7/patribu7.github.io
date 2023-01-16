@@ -3,15 +3,6 @@
     padding: 0;
 }
 
-html {
-    border: 3px solid red;
-}
-
-body {
-
-    border: 3px solid green;
-}
-
 .flexbox-row {
     display: flex;
     flex-direction: row;
@@ -96,4 +87,27 @@ body {
     display: flex;
     flex-direction: row-reverse;
 
+}
+
+/*stile progetti*/
+
+.img-project {
+    width: 100px;
+    height: 100%;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-block-end: 50px;
+} 
+
+.list-projects>:nth-child(even) {
+   flex-direction: row;
+}
+
+.list-projects>:nth-child(odd) {
+    flex-direction: row-reverse;
 }
