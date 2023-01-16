@@ -6,7 +6,7 @@
 .flexbox-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -24,10 +24,7 @@
 .page {
     width: 100%;
     height: 1080px;
-}
-
-.container {
-    min-height: 100%;
+    max-height: 1080px;
 }
 
 .container-home {
@@ -35,6 +32,15 @@
     width: 800px;
     height: 500px;
     margin-top: 5em;
+
+}
+
+.container {
+    min-width: 850px;
+}
+
+.container * {
+    max-height: 1000px;
 
 }
 
@@ -51,12 +57,6 @@
 .header {
     text-align: right;
 
-}
-
-/*evidenzio i bordi della tabella per vedere meglio la struttura*/
-#projects>.container, #projects>.container * {
-    border-style: solid;
-    border-width: 1px;
 }
 
 .card {
@@ -86,8 +86,14 @@
 .main-warpper {
     display: flex;
     flex-direction: row-reverse;
-
 }
+
+/*evidenzio i bordi della tabella per vedere meglio la struttura*/
+
+#projects>.container * {
+    border-style: solid;
+    border-width: 1px;
+}   
 
 /*stile progetti*/
 
@@ -110,4 +116,14 @@
 
 .list-projects>:nth-child(odd) {
     flex-direction: row-reverse;
+}
+
+.list-projects {
+    overflow-y: scroll;
+
+}
+
+/*prevent to overflow child*/
+.list-projects {
+    overflow-y: scroll;
 }
