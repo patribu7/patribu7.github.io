@@ -35,11 +35,11 @@
 
             <div class="pages-wrapper">
                 <div id="home" class="page">
-                    <div class="container-home flexbox-row">
+                    <div class="container-home flexbox-row space-around wrap">
                         
                         <img class="profileImg" src="img/profileBrown.png" alt=""></img>
                         
-                        <div class="main-menu flexbox-column">
+                        <div class="main-menu flexbox-column space-around">
                             <div class="menu-item">
                                 <a href="#bio">Bio</a>
                             </div>
@@ -68,7 +68,7 @@
                 <div id="projects" class="page">
                     <h2 class="header">Progetti</h2>
 
-                    <div class="container flexbox-row">
+                    <div class="container flexbox-row wrap space-around">
 
                         <div class="col">
                             <ul class="list-projects">
@@ -102,22 +102,55 @@
 
                         </div>
                         
-                        <div class="col">
+                        <div class="col flexbox-column space-between">
                             <div class="row">1
                                 <div class="col">
-                                    <div class="row">parola chiave</div>
-                                    <div class="row">pulsantiera</div>
+                                    <div class="row">
+                                        <!--filter form-->
+                                        <form class="filter-projects flexbox-row wrap center" action="">
+                                            <input type="text" placeholder="cerca un progetto">
+                                            <button type="submit">filtra</button>
+                                        </form>
+                                        <!--end filter form-->
+
+                                    </div>
+                                    <div class="row">
+                                        <p>Filtra per:</p>
+                                            <!--button keyboard-->
+                                        <div class="keyboard flexbox-row wrap">
+                                                <button class="key">skill</button>
+                                                <button class="key">nome</button>
+                                                <button class="key">3</button>
+                                                <button class="key">4</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col">
+
+                                    <figure>
+                                    <img style="width: 100%;" src="img/sample-immage1.jpg" alt="">
+                                    <figcaption>vetrina</figcaption>
+                                    </figure>
+                                
                                 </div>
-                                <div class="col">vetrina</div>
                             </div>
 
                             <div class="row">2
-                                <div class="col">cassetto</div>
-                                <div class="col">vetrina</div>
+                                <div class="col">
+
+                                    <figure class="flexbox-row">
+                                        <img style="width: 100%;" src="img/sample-immage2.jpg" alt="">
+                                        <figcaption>vetrina</figcaption>
+                                    </figure>
+                                
+                                </div>
+                                <div class="col">
+                                    <img style="width: 100%;" src="img/deco_cassetto.png" alt="">
+                                </div>
                             </div>
 
                             <div class="row">3
-                                libri
+                                <img src="img/fila di libri.png" alt="">
                             </div>
 
                         </div>
@@ -130,7 +163,7 @@
                 <div id="skills" class="page">
                     <h2 class="header">Skills</h2>
 
-                    <div class="container flexbox-row">
+                    <div class="container flexbox-row wrap">
                         <div class="card">card</div>
                         <div class="card">card</div>
                         <div class="card">card</div>
