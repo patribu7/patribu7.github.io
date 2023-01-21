@@ -46,6 +46,7 @@ body {
 #home {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .page {
@@ -220,3 +221,10 @@ svg {
     margin: 0;
     overflow: visible;
 }
+
+button, input {
+    background-color: transparent;
+    border: solid gray 1px;
+}
+
+/* side scroll bar */
