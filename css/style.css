@@ -5,6 +5,7 @@
 
 h2 {
     margin-bottom: 100px;
+    color: gray;
 }
 
 p, input, button {
@@ -80,8 +81,9 @@ body {
 }
 
 .card {
+    justify-content: center;
+    align-items: center;
     position: sticky;
-    top: 0;
     width: 200px;
     height: 230px;
     margin: 20px 30px 0px 0px;
@@ -89,6 +91,22 @@ body {
     border-width: 1px;
     border-color: rgb(120, 120, 120);
     border-radius: 20px;
+    background-color: rgb(243, 204, 167);
+}
+
+.card>img:first-child {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card>img:last-child {
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
 }
 
 .main-wrapper {
