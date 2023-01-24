@@ -11,92 +11,75 @@
     </head>
 
     <body>
-        <div class="main-wrapper">
-
-            <div class="side-menu">
-                <div class="menu-items">
-                    <a href="#home">
-                        <h4>Home</h4>
-                    </a>
-
-                    <a href="#bio">
-                        <h4>Bio</h4>
-                    </a>
-
-                    <a href="#projects">
-                        <h4>Projects</h4>
-                    </a>
-
-                    <a href="#skills">
-                        <h4>Skills</h4>
-                    </a>
-                    <a href="#contacts">
-                        <h4>Contacts</h4>
-                    </a>
+        <div class="pages-wrapper">
+            <section id="home">
+                <div class="page flexbox-row space-between">
+                    <div class="container flexbox-row space-around">
+                    <img class="profileImg" src="img/profileBrown.png" alt="Patrizia" style="mix-blend-mode: multiply;"></img>
+                    </div>
                 </div>
-                
-                <div class="lines">
-                    <!-- fare un unico svg e piu' linee con js -->
-                    <svg>
-                        <line x1="0" y1="9000" x2="0" y2="0" stroke="gray" stroke-width="1" transform="" marker-end="url(#dot)" marker-start="url(#dot)"/>
-                        <marker id="dot" markerWidth="10" markerHeight="10" refX="5" refY="5">
-                            <circle cx="5" cy="5" r="5" fill="gray" />
-                            <circle cx="5" cy="5" r="3" fill="white" />
-                        </marker>
-                    </svg>
-                    <svg>
-                        <line x1="0" y1="9000" x2="0" y2="0" stroke="gray" stroke-width="1" transform="" marker-end="url(#dot)" marker-start="url(#dot)"/>
-                        <marker id="dot" markerWidth="10" markerHeight="10" refX="5" refY="5">
-                            <circle cx="5" cy="5" r="5" fill="gray" />
-                            <circle cx="5" cy="5" r="3" fill="white" />
-                        </marker>
-                    </svg>
-                    <svg>
-                        <line x1="0" y1="9000" x2="0" y2="0" stroke="gray" stroke-width="1" transform="" marker-end="url(#dot)" marker-start="url(#dot)"/>
-                        <marker id="dot" markerWidth="10" markerHeight="10" refX="5" refY="5">
-                            <circle cx="5" cy="5" r="5" fill="gray" />
-                            <circle cx="5" cy="5" r="3" fill="white" />
-                        </marker>
-                    </svg>
-                    <svg>
-                        <line x1="0" y1="9000" x2="0" y2="0" stroke="gray" stroke-width="1" transform="" marker-end="url(#dot)" marker-start="url(#dot)"/>
-                        <marker id="dot" markerWidth="10" markerHeight="10" refX="5" refY="5">
-                            <circle cx="5" cy="5" r="5" fill="gray" />
-                            <circle cx="5" cy="5" r="3" fill="white" />
-                        </marker>
-                    </svg>
-                    <svg>
-                        <line x1="0" y1="9000" x2="0" y2="0" stroke="gray" stroke-width="1" transform="" marker-end="url(#dot)" marker-start="url(#dot)"/>
-                        <marker id="dot" markerWidth="10" markerHeight="10" refX="5" refY="5">
-                            <circle cx="5" cy="5" r="5" fill="gray" />
-                            <circle cx="5" cy="5" r="3" fill="white" />
-                        </marker>
-                    </svg>
-                </div>
-            </div>
 
-            <div class="pages-wrapper">
-                <div id="home" class="page">
-                    <div class="container flexbox-row space-around wrap">
+                <div class="side-menu">
+                    <ul class="menu-items">
+                        <li>
+                            <a href="#home">
+                                <h4>Home</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#bio">
+                                <h4>Bio</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                <h4>Projects</h4>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#skills">
+                                <h4>Skills</h4>
+                            </a>
+                        </li>
                         
-                        <img class="profileImg" src="img/profileBrown.png" alt="Patrizia" style="mix-blend-mode: multiply;"></img>
+                        <li>
+                            <a href="#contacts">
+                                <h4>Contacts</h4>
+                            </a>
+                        </li>
+                        
+                    </ul>
                     
-                    </div>    
-                </div>
+                    <div class="connection-headers-lines"></div>
+                    <svg><use href="./img/side-menu/lines.svg#lines"></use></svg>              
+                    
+                </div>  
+            </section>
 
-                <div id="bio" class="page">
+            <section id="bio">
+                <div class="page">
                     <h2 class="header">Chi sono</h2>
-
+                    
                     <div class="container">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, est quas. Ipsam voluptatibus eligendi fugiat? Deleniti laborum labore excepturi at voluptates saepe nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, est quas. Ipsam voluptatibus eligendi fugiat? Deleniti laborum labore excepturi at voluptates saepe nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, est quas. Ipsam voluptatibus eligendi fugiat? Deleniti laborum labore excepturi at voluptates saepe nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, est quas. Ipsam voluptatibus eligendi fugiat? Deleniti laborum labore excepturi at voluptates saepe nisi? Quis ut porro velit eveniet autem rem!</p>
                     </div>
                 </div>
 
-                <div id="projects" class="page">
+                <div class="side-menu">
+                    <div>
+                        <svg><use href="./img/side-menu/connections-bio.svg#lines"></use></svg>
+                    </div>
+                    
+                    <svg><use href="./img/side-menu/lines.svg#lines"></use></svg>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="page">
                     <h2 class="header">Progetti</h2>
-
                     <div class="container flexbox-row wrap space-around">
-
+                        
                         <div class="col list-projects">
                             <ul>
 
@@ -104,7 +87,7 @@
                                     <img class="img-project" src="img/projects/crystal.png"></img>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
                                 </li>
-                               
+                            
                                 <li class="project">
                                     <img class="img-project" src="img/projects/potion.png"></img>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
@@ -114,7 +97,7 @@
                                     <img class="img-project" src="img/projects/potion.png"></img>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
                                 </li>
-                               
+                            
                                 <li class="project">
                                     <img class="img-project" src="img/projects/crystal.png"></img>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
@@ -181,27 +164,50 @@
                             </div>
 
                         </div>
-                       
-            
                         
                     </div>
                 </div>
-
-                <div id="skills" class="page">
-                    <h2 class="header">Skills</h2>
-
-                    <div id="deck" class="container flexbox-row wrap">
-
-                    </div>
-                </div>
                 
-                <div id="contacts" class="page">
-                    <h2 class="header">Contacts</h2>
+                <div class="side-menu">
+                   <div><svg><use href="./img/side-menu/connections-projects.svg#lines"></use></svg></div>
+                    <svg><use href="./img/side-menu/lines.svg#lines"></use></svg>
+                    
+                </div>
+                    
+            </section>
 
+            <section id="skills">
+                <div class="page">             
+                    <h2 class="header">Skills</h2>
+                    <!-- mettere il deck dentro a container -->
+                    <div id="deck" class="container flexbox-row wrap"></div>
                 </div>
 
-            </div>
+                <div class="side-menu">
+                   
+                    <div><svg><use href="./img/side-menu/connections-skills.svg#lines"></use></svg></div>
+                    
+                    <svg><use href="./img/side-menu/lines.svg#lines"></use></svg>                   
+                    
+                </div>  
+                
+            </section>
+            
+            <section id="contacts">
+                <div class="page">
+                    <h2 class="header">Contacts</h2>
+                    <div class="container"></div>
+                </div>
+
+                <div class="side-menu">
+                   
+                    <div><svg><use href="./img/side-menu/connections-contacts.svg#lines"></use></svg></div>
+                    
+                    <svg><use href="./img/side-menu/lines.svg#lines"></use></svg> 
+            </section>
+
         </div>
+    
     </body>
 
 <script src="./js/script.js"></script>
