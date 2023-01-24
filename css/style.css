@@ -85,6 +85,15 @@ section {
 
 }
 
+#home>.page>.container {
+    margin-top: 15em;
+}
+
+#bio>.page>.container {
+    padding: 10em;
+}
+
+
 /* skills */
 
 .card {
