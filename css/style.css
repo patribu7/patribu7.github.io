@@ -20,6 +20,10 @@ a, a:active, a:visited, a:hover {
     color: rgb(120, 120, 120);
 }
 
+li {
+    list-style: none;
+}
+
 /*set background image*/
 body {
     background-image: url("../img/sfondo2.jpg");
@@ -27,6 +31,41 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
+    overflow: overlay;
+}
+
+/* scrollbar */
+
+    /* compatibilia' Edge, Chrome */
+::-webkit-scrollbar {
+    background-image: none;
+    
+}
+
+::-webkit-scrollbar-button {
+    background: gray;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    width: 2px;
+    border: solid gray 2px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+    /* compatibilia' Firefox */
+.list-projects {
+    scrollbar-color: gray gray;
+    scrollbar-width: thin;
 }
 
 /* flexbox */
@@ -153,9 +192,9 @@ section {
 .list-projects {
     overflow-y: scroll;
     max-height: 750px;
-
 }
 
+/* filtro */
 .key {
     width: 50px;
     height: 50px;
@@ -170,19 +209,16 @@ section {
 }
 
 .filter-projects {
-    height: 166.5px;
+    height: 3em;
+    align-items: initial;
+    justify-content: initial;
 }
 
-.filter-projects>input {
-    width: 70%;
-    height: 80%;
-
+.filter-projects>* {
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.filter-projects>button {
-    width: 28%;
-    height: 80%;
-}
 
 .row {
     margin: 0;
@@ -227,10 +263,6 @@ section {
 button, input {
     background-color: transparent;
     border: solid gray 1px;
-}
-
-li {
-    list-style: none;
 }
 
 svg {
