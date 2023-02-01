@@ -6,6 +6,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -80,81 +81,107 @@
                 <div class="page">
                     <h2 class="header">Progetti</h2>
                     <div class="container flexbox-row wrap space-around">
-                        
-                        <div class="col list-projects">
-                            <ul>
+                                               
+                        <div class="col col-left">
+                            <div class="row filter-projects">
+                                <!--filter form-->
+                                <form class=" flexbox-row space-between" action="">
+                                    <input type="text" placeholder="filtra per">
+                                    <select name="filter" id="filter">
+                                        <option value="name">nome progetto</option>
+                                        <option value="skill">skill</option>
+                                    </select>
+                                    <button type="submit">&#128269;</button>
+                                    
+                                </form>
+                                <!--end filter form-->
+                                <p id="filter-report"><span>0[n]</span><span> progetti totali [progetti filtrati]</span></p>
+                            </div>
 
-                                <li class="project">
-                                    <img class="img-project" src="img/projects/crystal.png"></img>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                </li>
-                            
-                                <li class="project">
-                                    <img class="img-project" src="img/projects/potion.png"></img>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
-                                </li>
-                    
-                                <li class="project">
-                                    <img class="img-project" src="img/projects/potion.png"></img>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
-                                </li>
-                            
-                                <li class="project">
-                                    <img class="img-project" src="img/projects/crystal.png"></img>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                </li>
+                            <div class="row">
+                                <ul class="list-projects">
+
+                                    <li class="project">
+                                        <img class="img-project" src="img/projects/crystal.png"></img>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
+                                    </li>
                                 
-                                <li class="project">
-                                    <img class="img-project" src="img/projects/crystal.png"></img>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                </li>
+                                    <li class="project">
+                                        <img class="img-project" src="img/projects/potion.png"></img>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
+                                    </li>
+                        
+                                    <li class="project">
+                                        <img class="img-project" src="img/projects/potion.png"></img>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
+                                    </li>
+                                
+                                    <li class="project">
+                                        <img class="img-project" src="img/projects/crystal.png"></img>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
+                                    </li>
+                                    
+                                    <li class="project">
+                                        <img class="img-project" src="img/projects/crystal.png"></img>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
+                                    </li>
 
-                            </ul>
+                                </ul>
+                            </div>
 
                         </div>
                         
-                        <div class="col flexbox-column space-between">
-                            <div class="row">1
+                        <div class="col col-right flexbox-column space-between">
+                            <div class="row">
                                 
-                                <div class="col-8">
-                                    <p><span>0</span> progetti trovati</p>
-                                    <!--filter form-->
-                                    <form class="filter-projects flexbox-row wrap center" action="">
-                                        <input type="text" placeholder="cerca un progetto">
-                                        <button type="submit">filtra</button>
-                                    </form>
-                                    <!--end filter form-->
-                                </div>
-                                
-                                <div class="col-3 flexbox-row">
-                                    <p>Filtra per:</p>
-                                        <!--button keyboard-->
-                                    <div class="keyboard flexbox-column wrap">
-                                            <button class="key">skill</button>
-                                            <button class="key">nome</button>
-                                            <button class="key">3</button>
+                                <!-- slideShow -->
+                                <div id="carouselProj" class="col carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/projects/crystal.png" class="d-block w-100" alt="">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="img/projects/potion.png" class="d-block w-100" alt="">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="img/projects/crystal.png" class="d-block w-100" alt="">
+                                        </div>
                                     </div>
-                                    
-                                </div>
-                                
-                            </div>
-                        
-
-                            <div class="row">2
-                                <div class="col">
-
-                                    <figure class="flexbox-row">
-                                        <img style="width: 100%;" src="img/sample-immage2.jpg" alt="">
-                                        <figcaption>vetrina</figcaption>
-                                    </figure>
-                                
                                 </div>
                                 <div class="col">
-                                    <img style="width: 100%;" src="img/deco_cassetto.png" alt="">
+                                    <!-- cololnna vuota -->
                                 </div>
                             </div>
+                           
 
-                            <div class="row">3
+                            <div class="row">
+                                <div class="col">
+                                    <!-- cololnna vuota -->
+                                </div>
+                                
+                                <!-- slideShow -->
+                                <div id="carouselProj" class="col carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/projects/crystal.png" class="d-block w-100" alt="...">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="img/projects/potion.png" class="d-block w-100" alt="...">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="img/projects/crystal.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                    
+
+                            <div class="row flexbox-row center">
                                 <img src="img/fila di libri.png" alt="">
                             </div>
 

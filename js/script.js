@@ -25,3 +25,7 @@ deck.forEach(card => {
     addToDeck(card);
     
 });
+
+// showbox animate
+var carousel = document.querySelector('#carouselProj')
+var carouseNew = new bootstrap.Carousel(carousel)
