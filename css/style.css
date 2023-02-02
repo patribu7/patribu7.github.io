@@ -114,6 +114,10 @@ body {
     
 }
 
+/* .container {
+    opacity: 100% !important;
+} */
+
 section {
     display: flex;
     flex-direction: row;
@@ -129,12 +133,28 @@ section {
     margin-top: 15em;
 }
 
+/* bio page */
+
 #bio>.page>.container {
-    padding: 10em;
+    padding: 12em
 }
 
+#bioText {
+    
+    translate: 200px;
+}
 
-/* skills */
+#bio>.page>.container>img {
+    margin: -270px 0 0 -270px;
+    width: 1000px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+}
+
+/* skills page*/
 
 .card {
     justify-content: center;
