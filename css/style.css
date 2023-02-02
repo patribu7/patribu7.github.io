@@ -5,7 +5,7 @@
 
 h2 {
     margin-top: 33px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-right: 15px;
     color: gray;
 }
@@ -115,8 +115,7 @@ body {
 }
 
 .container {
-    padding-left: 15%;
-    padding-right: 15%;
+
 }
 
 section {
@@ -152,6 +151,95 @@ section {
     z-index: -1;
     mix-blend-mode: multiply;
     opacity: 0.3;
+}
+
+/*stile progetti*/
+
+.col-right, .col-left {
+    padding: 40px;
+}
+
+.img-project {
+    width: 100px;
+    height: 100%;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-block-end: 50px;
+}
+
+.list-projects {
+    overflow-y: scroll;
+    max-height: 750px;
+    padding-right: 30px;
+}
+
+.list-projects>:nth-child(even) {
+   flex-direction: row;
+}
+
+.list-projects>:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+    /* slideshow */
+.indicators {
+    width: 60%;
+    min-width: 314px;
+}
+
+.row {
+    margin-bottom: 60px;
+}
+
+    /* filtro */
+
+.filter-projects {
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.filter-projects>form {
+    width: 100%;
+    
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+#filter-report {
+    font-size: 10pt;
+    color: inherit;
+    text-align: end;
+    
+}
+
+.filter-projects>form>input {
+    border-bottom: solid 1px gray;
+}
+
+.filter-projects>form * {
+    font-size: 12pt;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.filter-projects>form>input,
+.filter-projects>form>button,
+.filter-projects>form>select,
+.filter-projects>form>select>option {
+/* quest'ultimo non funziona!!!*/
+    background: transparent;
+    border: none;
+    height: 50px;
+}
+
+.filter-projects>form>input {
+    border-bottom: solid 1px gray !important;
 }
 
 /* skills page*/
@@ -192,85 +280,7 @@ section {
 
 
 
-/*stile progetti*/
 
-.col-right, .col-left {
-    padding: 40px;
-}
-
-.img-project {
-    width: 100px;
-    height: 100%;
-}
-
-.project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-block-end: 50px;
-}
-
-.list-projects {
-    overflow-y: scroll;
-    max-height: 750px;
-    padding-right: 30px;
-}
-
-.list-projects>:nth-child(even) {
-   flex-direction: row;
-}
-
-.list-projects>:nth-child(odd) {
-    flex-direction: row-reverse;
-}
-
-    /* filtro */
-
-.filter-projects {
-    margin-bottom: 50px;
-    margin-right: 40px;
-}
-.filter-projects>form {
-    width: 100%;
-    
-    margin-bottom: 40px;
-    align-content: center;
-}
-
-#filter-report {
-    font-size: 10pt;
-    color: inherit;
-    text-align: end;
-    
-}
-
-.filter-projects>form>input {
-    border-bottom: solid 1px gray;
-}
-
-.filter-projects>form * {
-    font-size: 12pt;
-    color: gray;
-    font-family: 'Courier New', Courier, monospace;
-    justify-content: center;
-    text-align: center;
-  
-}
-
-.filter-projects>form>input,
-.filter-projects>form>button,
-.filter-projects>form>select,
-.filter-projects>form>select>option {
-/* quest'ultimo non funziona!!!*/
-    background: transparent;
-    border: none;
-    height: 50px;
-}
-
-.filter-projects>form>input {
-    border-bottom: solid 1px gray !important;
-}
 
 /* side menu */
 
