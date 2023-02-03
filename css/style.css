@@ -300,7 +300,7 @@ section {
 .menu-items {
     position: fixed;
     top: 280px;
-    right: 10px;
+    right: 15px;
     min-width: 150px;
     width: 150px;
     transform: rotate(90deg);
@@ -316,6 +316,14 @@ section {
     /* Opera */
     -o-transform: rotate(90deg);
 
+}
+
+.menu-items>li>a>span:hover {
+    color: rgb(124, 107, 29);
+}
+
+.menu-items>li>a>span:active {
+    color: rgb(0, 200, 255);
 }
 
 .menu-items>li * {
