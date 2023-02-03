@@ -331,13 +331,13 @@ section {
     line-height: 1.1;
 }
 
-/* specificare quale svg */
-svg {
+
+svg { /* specificare quale svg */
     height: 100%;
     width: 100%;
 }
 
 /* showbox */
 .carousel-inner {
-   width: 250px;
+   width: 90%;
 }
