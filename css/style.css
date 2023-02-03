@@ -206,7 +206,6 @@ section {
 }
 .filter-projects>form {
     width: 100%;
-    
     margin-bottom: 20px;
     align-content: center;
 }
@@ -216,10 +215,6 @@ section {
     color: inherit;
     text-align: end;
     
-}
-
-.filter-projects>form>input {
-    border-bottom: solid 1px gray;
 }
 
 .filter-projects>form * {
@@ -239,6 +234,7 @@ section {
     background: transparent;
     border: none;
     height: 50px;
+    border-bottom: solid 1px gray;
 }
 
 .filter-projects>form>input {
@@ -246,6 +242,10 @@ section {
 }
 
 /* skills page*/
+
+#skills>.page>.container {
+    padding: 5em;
+}
 
 .card {
     justify-content: center;
