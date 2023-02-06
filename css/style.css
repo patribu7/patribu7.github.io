@@ -281,14 +281,11 @@ section {
     transform: rotate(180deg);
 }
 
-
-
-
-
 /* side menu */
 
 .side-menu {
-    display: flex;
+    display: block;
+    align-items: stretch;
     flex-direction: column;
     width: 160px;
     min-width: 160px;
@@ -296,9 +293,20 @@ section {
     margin-right: 25px;
 }
 
+.side-menu>svg {
+    height: calc(100% - 160px);
+    position: relative;
+
+}
+
+.side-menu>svg:first-child {
+    height: 160px;
+   
+}
 
 .menu-items {
     position: fixed;
+    z-index: 100;
     top: 280px;
     right: 15px;
     min-width: 150px;
@@ -340,10 +348,13 @@ section {
 }
 
 
-svg { /* specificare quale svg */
-    height: 100%;
-    width: 100%;
+
+
+
+#lines {
+    stroke: gray;
 }
+
 
 /* showbox */
 .carousel-inner {

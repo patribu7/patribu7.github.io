@@ -41,18 +41,18 @@
        id="to-skills"
        inkscape:label="to-skills">
       <path
-         style="fill:none;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          d="m 10.781268,62.940032 38.067581,-14.16921 0.0059,127.038468"
          id="path2501-6-8"
          sodipodi:nodetypes="ccc"
          inkscape:label="path2501-6-8" />
       <path
-         style="fill:none;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker-dot)"
+         style="fill:none;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker-dot)"
          d="M 6.2561136,41.111662 48.919676,27.01347 l 0.0085,-73.300427"
          id="path2501-6"
          sodipodi:nodetypes="ccc" />
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300-5"
          cx="33.852856"
          cy="78.754761"
@@ -60,7 +60,7 @@
          ry="4.3269229"
          transform="translate(-27.072349,-13.902481)" />
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300-58"
          cx="35.51812"
          cy="78.514374"
@@ -72,7 +72,7 @@
        id="to-contacts"
        inkscape:label="to-contacts">
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300-9"
          cx="33.852856"
          cy="78.754761"
@@ -80,18 +80,18 @@
          ry="4.3269229"
          transform="translate(-14.911503,-62.545058)" />
       <path
-         style="stroke-width:2.06472;stroke-dasharray:none;fill:none;stroke:#808080;stroke-opacity:1"
+         style="stroke-width:2.06472;stroke-dasharray:none;fill:none;   stroke-opacity:1"
          d="m 18.941353,170.72458 0,-80.11428"
          id="path4918"
          sodipodi:nodetypes="cc" />
       <path
-         style="fill:none;stroke:#808080;stroke-width:2.06472;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+         style="fill:none;   stroke-width:2.06472;stroke-dasharray:none;stroke-opacity:1;marker-end:"
          d="M 18.941353,-42.747857 V 11.88278"
          id="path321"
          sodipodi:nodetypes="cc"
          inkscape:label="path321" />
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300"
          cx="33.852856"
          cy="78.754761"
@@ -100,19 +100,19 @@
          transform="translate(-14.911503,7.5286164)" />
     </g>
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 138.95198,-46.726883 0,222.391433"
        id="to-home"
        sodipodi:nodetypes="cc"
        inkscape:label="to-home" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 109.0459,-50.770276 V 171.62115"
        id="to-bio"
        sodipodi:nodetypes="cc"
        inkscape:label="to-bio" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 78.978105,-46.245422 V 176.146"
        id="to-projects"
        sodipodi:nodetypes="cc"

@@ -41,13 +41,13 @@
        id="to-contacts"
        inkscape:label="to-contacts">
       <path
-         style="fill:none;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:"
+         style="fill:none;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:"
          d="M 5.7690777,60.908736 18.907713,48.769883 18.910313,175.81581"
          id="path2501-6-8"
          sodipodi:nodetypes="ccc"
          inkscape:label="path2501-6-8" />
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300"
          cx="33.852856"
          cy="78.754761"
@@ -55,7 +55,7 @@
          ry="4.3269229"
          transform="translate(-30.97064,-15.274528)" />
       <ellipse
-         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;stroke:#808080;stroke-linejoin:round"
+         style="stroke-width:2.06472;stroke-dasharray:none;display:inline;fill:none;   stroke-linejoin:round"
          id="path300-5"
          cx="33.852856"
          cy="78.754761"
@@ -63,31 +63,31 @@
          ry="4.3269229"
          transform="translate(-33.049068,-35.336531)" />
       <path
-         style="fill:none;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:none;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
          d="m 3.8881027,40.38912 15.0512743,-13.377866 0.0038,-73.304731"
          id="path2501-6"
          sodipodi:nodetypes="ccc" />
     </g>
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 138.95198,-46.726883 0,222.391433"
        id="to-home"
        sodipodi:nodetypes="cc"
        inkscape:label="to-home" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 109.0459,-50.770276 V 171.62115"
        id="to-bio"
        sodipodi:nodetypes="cc"
        inkscape:label="to-bio" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 78.978105,-46.245422 V 176.146"
        id="to-projects"
        sodipodi:nodetypes="cc"
        inkscape:label="to-projects" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;   stroke-width:2.06472;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="M 48.938579,-50.883251 V 171.50817"
        id="to-skills"
        sodipodi:nodetypes="cc"
