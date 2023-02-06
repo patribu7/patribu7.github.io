@@ -114,10 +114,6 @@ body {
     
 }
 
-.container {
-
-}
-
 section {
     display: flex;
     flex-direction: row;
@@ -137,6 +133,10 @@ section {
 
 #bio>.page>.container {
     padding: 12em
+}
+
+#contacts > * {
+    max-height: 50em;
 }
 
 
@@ -307,8 +307,10 @@ textarea:focus, input:focus, form>*:focus {
 }
 
 .side-menu>svg {
+    width: 160px;
     height: calc(100% - 160px);
     position: relative;
+    max-height: calc(100% - 160px);
 
 }
 
@@ -360,10 +362,6 @@ textarea:focus, input:focus, form>*:focus {
     line-height: 1.1;
 }
 
-
-
-
-
 #lines {
     stroke: gray;
 }
@@ -371,5 +369,29 @@ textarea:focus, input:focus, form>*:focus {
 
 /* showbox */
 .carousel-inner {
-   width: 90%;
+    width: 90%;
+}
+
+/* contatti */
+
+#contacts {
+    background-image: url("../img/contacts/contactsBackground.png");
+    background-size: cover;
+}
+
+#contacts-list  {
+    padding-top: 160px;
+}
+
+#contacts>div>.container {
+    padding-top: 200px;
+}
+
+#contacts-list>li>a>img {
+    width: 100px;
+    height: 100px;
+}
+
+#connections-contacts {
+    overflow: visible;
 }
