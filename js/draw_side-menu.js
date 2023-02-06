@@ -231,7 +231,7 @@ class="to-home"
        inkscape:label="to-home" />
   </g>
 </svg>
-;`
+`;
 var connectionsToSkills = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="svg5817"
