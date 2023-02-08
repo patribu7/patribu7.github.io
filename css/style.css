@@ -262,7 +262,7 @@ textarea:focus, input:focus, form>*:focus {
 
 .card {
     justify-content: center;
-    align-items: center;
+    text-align: center;
     position: sticky;
     width: 200px;
     top: 20px;
@@ -275,25 +275,47 @@ textarea:focus, input:focus, form>*:focus {
     background-image: url("../img/cards/cardBackground.png");
 }
 
-.card>img:first-child {
-    mix-blend-mode: overlay;
-    width: 40px;
+.card>div {
+    width: 30px;
     position: absolute;
+}
+
+.card>div:first-child {
     left: 0;
     top: 0;
     margin: 3px;
 }
 
-.card>img:last-child {
-    mix-blend-mode: overlay;
-    width: 40px;
-    position: absolute;
+.card>div:last-child {
     right: 0;
     bottom: 0;
     margin: 3px;
     transform: rotate(180deg);
+    
 }
 
+.card>div>img {
+    width: 100%;
+    mix-blend-mode: overlay;
+}
+
+.card>p::first-letter {
+    text-transform: uppercase;
+}
+
+.card>p, .card>div>p {
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.programmazione>p {
+    color:darkblue
+}
+
+.design>p {
+    color:darkred
+}
 /* side menu */
 
 .side-menu {
