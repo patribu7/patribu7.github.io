@@ -57,6 +57,86 @@ class="to-home"
 </svg>
 `;
 
+var connectionsToHome = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg5817"
+   viewBox="0 0 160 160"
+   version="1.1"
+   sodipodi:docname="connections-bio.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   width="150"
+   height="150"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5821" />
+  <sodipodi:namedview
+     id="namedview5819"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.9415642"
+     inkscape:cx="8.6688572"
+     inkscape:cy="56.43256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="lines" />
+     <g
+     id="lines"
+     class="SVGlines"
+     inkscape:label="lines"
+     transform="matrix(1.0008427,0,0,0.04391354,5.0929707,-0.701902)"
+     style="fill:#000000;fill-opacity:1; stroke-width:2.06472;stroke-dasharray:none;stroke-opacity:1">
+    <path
+       style="fill:none;fill-opacity:1; stroke-width:2.544;stroke-dasharray:none;stroke-opacity:1"
+       d="M 67.107176,0.59331904 66.868123,2088.8258 44.286345,2499.7286 30.471382,3011.3543 18.942636,3416.6053 v 395.0254"
+       id="to-contacts"
+       class="to-contacts"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="to-contacts" />
+    <path
+       style="fill:none;fill-opacity:1; stroke-width:2.544;stroke-dasharray:none;stroke-opacity:1"
+       d="M 73.014493,0.59331904 73.170668,2158.8895 l -6.530953,379.531 -8.484495,432.0868 -9.222997,446.098 v 395.462"
+       id="to-skills"
+       class="to-skills"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="to-skills" />
+    <path
+       style="fill:none;fill-opacity:1; stroke-width:2.54399698;stroke-dasharray:none;stroke-opacity:1"
+       d="M 78.949839,0.59331904 V 3416.6053 v 394.938"
+       id="to-projects"
+       class="to-projects"
+       inkscape:label="to-projects"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;fill-opacity:1; stroke-width:2.544;stroke-dasharray:none;stroke-opacity:1"
+       d="M 84.85955,0.59331904 84.577549,2123.8542 l 6.738921,408.7265 9.17094,391.2147 8.45441,492.8099 v 394.5962"
+       id="to-bio"
+       class="to-bio"
+       sodipodi:nodetypes="cccccc"
+       inkscape:label="to-bio" />
+    <path
+       style="fill:none;fill-opacity:1; stroke-width:2.544;stroke-dasharray:none;stroke-opacity:1"
+       d="M 91.285689,0.59331904 92.004893,2072.45 l 17.445847,495.1689 16.93358,408.7274 12.55352,834.1304"
+       id="to-home"
+       class="to-home"
+       sodipodi:nodetypes="ccccc"
+       inkscape:label="to-home"
+       onmouseover="" />
+  </g>
+</svg>
+`;
+
 var connectionsToBio = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="svg5817"
@@ -641,10 +721,11 @@ var connectionsToContacts = `<?xml version="1.0" encoding="UTF-8" standalone="no
 // crea un dizionario con le variabili e gli id sezione corrispondenti
 
 var sections = {
-    "bio": connectionsToBio,
-    "projects": connectionsToProjects,
-    "skills": connectionsToSkills,
-    "contacts": connectionsToContacts
+   "home": connectionsToHome,
+   "bio": connectionsToBio,
+   "projects": connectionsToProjects,
+   "skills": connectionsToSkills,
+   "contacts": connectionsToContacts
 };
 
 // variabili globali
@@ -658,13 +739,11 @@ var lightPosition = 'orange';
 function drawLines() {
     for (var i = 0; i < sideMenu.length; i++) {
             var id = sideMenu[i].parentNode.id;
-            if (id != "home" && id != "contacts") {
+            if (id != "contacts") {
                // rileva la corrispondenza dizionario
                sideMenu[i].innerHTML = sections[id] + straightLines;
             } else if (id === "contacts") {
                sideMenu[i].innerHTML = connectionsToContacts;
-            } else if (id === "home") {
-               sideMenu[i].innerHTML = straightLines;
             };
    };
 };
