@@ -201,58 +201,50 @@ section {
     /* filtro */
 
 .filter-projects {
-    margin-right: 40px;
-    margin-bottom: 100px;
-}
-.filter-projects>form {
-    margin-bottom: 20px;
-    align-content: center;
+width: calc(80% - 50px);
     height: 1px;
+    margin-right: 40px;
+    overflow: hidden;
+    border: solid 2px gray;
+
 }
 
-.filter-projects>form>button>img {
-    visibility: collapse;
+.filter-projects>form>input {
+    border-bottom: solid 4px gray;
+
 }
 
-.filter-projects>form:hover, .filter-projects>form:focus-within {
-    width: 100%;
+.filter-projects:hover, .filter-projects:focus-within {
+    overflow: visible;
+    border: none;
     height: 50px;
-}
-
-.filter-projects>form:hover button>img, .filter-projects>form:focus-within button>img  {
-    visibility: visible;
-}
-
-textarea:focus, input:focus, form>*:focus {
-    border-color: gray;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(58, 59, 58, 0.6);
-    outline: 0 none;
-}
-
-#filter-report {
-    font-size: 10pt;
-    text-align: left;
-    
 }
 
 .filter-projects>form * {
     font-size: 12pt;
     color: gray;
     font-family: 'Courier New', Courier, monospace;
-    justify-content: center;
-    text-align: center;
     background: transparent;
-  
+    width: 100%;
+    border: none;
 }
 
-.filter-projects>form>input,
-.filter-projects>form>button,
-.filter-projects>form>select,
-.filter-projects>form>select>option {
-/* quest'ultimo non funziona!!!*/
-    border: none;
-    border-bottom: solid 4px gray;
+
+
+.filter-projects>form>input:focus {
+    visibility: visible;
+    border-color: gray;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(58, 59, 58, 0.6);
+    outline: 0 none;
 }
+
+.filter-report {
+    margin-top: 70px;
+    font-size: 10pt;
+    text-align: left;
+    
+}
+
 
 /* skills page*/
 

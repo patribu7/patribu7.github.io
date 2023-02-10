@@ -86,49 +86,23 @@
                     <div class="container flexbox-row wrap space-around">
                                                
                         <div class="col col-left">
-                            <div class="row filter-projects">
-
-                                <!--filter form-->
-                                <form class="flexbox-row" action="">
-                                    <select name="filter" id="filter">
-                                        <option value="name">nome progetto</option>
-                                        <option value="skill">skill</option>
-                                    </select>
-                                    <input type="text" placeholder="filtra per">
-                                    <button type="submit"><img src="./img/projects/search-icon.png" alt="search"></button>
-                                    
-                                </form>
-                                <!--end filter form-->
-                                <p id="filter-report"><span>[n]</span><span> progetti trovati</span></p>
+                            <div class="row flexbox-row center">
+                            
+                                <img  style="width: 50px; height: 100%;" src="./img/projects/search-icon.svg" alt="search">
+                               
+                                <div class="filter-projects">
+                                
+                                    <!--filter form-->
+                                    <form class="" onsubmit="return false">
+                                        <input id="input-filter-projects" type="sarch" placeholder="Digita una skill o il un progetto">                                    
+                                    </form>
+                                    <!--end filter form-->
+                                </div>
+                                <p class="filter-report"><span id="report"></span><span> progetti trovati</span></p>
                             </div>
 
                             <div class="row">
-                                <ul class="list-projects">
-
-                                    <li class="project">
-                                        <img class="img-project" src="img/projects/crystal.png"></img>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                    </li>
-                                
-                                    <li class="project">
-                                        <img class="img-project" src="img/projects/potion.png"></img>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
-                                    </li>
-                        
-                                    <li class="project">
-                                        <img class="img-project" src="img/projects/potion.png"></img>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p> 
-                                    </li>
-                                
-                                    <li class="project">
-                                        <img class="img-project" src="img/projects/crystal.png"></img>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                    </li>
-                                    
-                                    <li class="project">
-                                        <img class="img-project" src="img/projects/crystal.png"></img>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aspernatur laudantium placeat similique, error odit commodi reiciendis, repellendus possimus doloremque delectus veniam tenetur temporibus ducimus quae beatae nisi quas aperiam!</p>
-                                    </li>
+                                <ul id='list-projects' class="list-projects">
 
                                 </ul>
                             </div>
@@ -247,6 +221,6 @@
 
 <script src="./js/script.js"></script>
 <script src="./js/draw_side-menu.js"></script>
-
+<script src="./js/projects.js"></script>
 
 </html>
