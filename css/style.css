@@ -291,22 +291,22 @@ width: calc(80% - 50px);
     mix-blend-mode: overlay;
 }
 
-.card>p::first-letter {
+.card>a>p::first-letter {
     text-transform: uppercase;
 }
 
-.card>p, .card>div>p {
+.card>a>p, .card>div>a>p {
     font-size: 18pt;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
-.programmazione>p {
-    color:darkblue
+.programmazione>a>p {
+    color:darkblue;
 }
 
-.design>p {
-    color:darkred
+.design>a>p {
+    color:darkred;
 }
 
 /* side menu */
