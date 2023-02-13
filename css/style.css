@@ -282,8 +282,12 @@ width: calc(80% - 50px);
     right: 0;
     bottom: 0;
     margin: 3px;
+
+}
+
+.card>div:last-child>img, .card>div:last-child>p {
     transform: rotate(180deg);
-    
+
 }
 
 .card>div>img {
@@ -295,12 +299,13 @@ width: calc(80% - 50px);
     text-transform: uppercase;
 }
 
-.card>a>p, .card>div>a>p {
+.card>a>p, .card>div>p {
     font-size: 18pt;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
+
 .programmazione>a>p {
     color:darkblue;
 }

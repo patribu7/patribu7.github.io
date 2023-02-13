@@ -112,7 +112,7 @@ deckProgrammer = ['python', 'javascript', 'html5', 'css3'];
 deckDesigner = ['photoshop', 'inkscape', 'procreate'];
 cards = [];
 
-function addToDeck(skill, type, num = 0) {
+function addToDeck(skill, type, num = 1) {
     var card = document.createElement("div");
     // aggiungi due classi alla card
     card.classList.add('card', type);
@@ -130,11 +130,11 @@ function addToDeck(skill, type, num = 0) {
 
 
     lastDiv = card.appendChild(document.createElement('div'));
-    lastNum = lastDiv.appendChild(document.createElement('p'));
-    lastNum.innerHTML = num;    
     lastImg = lastDiv.appendChild(document.createElement('img'));
     lastImg.src = 'img/cards/' + skill + '.svg';
-
+    lastNum = lastDiv.appendChild(document.createElement('p'));
+    lastNum.innerHTML = num;
+    
 
     deckDiv.appendChild(card);
     cards.push(card);
