@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="18.495262"
-     inkscape:cx="-6.4881482"
-     inkscape:cy="12.489685"
+     inkscape:cx="0.27033951"
+     inkscape:cy="11.08392"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -37,9 +37,9 @@
   <path
      d="M 4,1.7668881e-5 1.143,2.8570177 V 13.143018 h 3.429 v 2.857 l 2.857,-2.857 H 9.713 L 14.857,8.0000177 V 1.7668881e-5 Z M 13.714,7.4290177 l -2.285,2.285 H 9.143 l -2,2.0000003 V 9.7140177 H 4.572 v -8.571 h 9.142 z"
      id="path433"
-     style="fill:#00ffff;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:#00ffff;stroke:none;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"
      id="path435"
-     style="fill:#00ffff;stroke:#000000;stroke-opacity:1;stroke-width:0.5;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round" />
+     style="fill:#00ffff;stroke:none;stroke-opacity:1;stroke-width:0.5;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round" />
 </svg>
