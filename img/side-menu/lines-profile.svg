@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg5817"
+   viewBox="0 0 160 320.00056"
+   version="1.1"
+   sodipodi:docname="lines-profile.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   width="150"
+   height="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style184" />
+  <defs
+     id="defs5821" />
+  <sodipodi:namedview
+     id="namedview5819"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.9415642"
+     inkscape:cx="76.829872"
+     inkscape:cy="337.5755"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="lines" />
+  <g
+     id="lines"
+     class="SVGlines"
+     inkscape:label="lines"
+     transform="matrix(1.0008427,0,0,1.0666667,5.0929707,-0.6277611)"
+     style="opacity:1;  stroke-width:3.09709;stroke-dasharray:none;stroke-opacity:1">
+    <path
+       style="fill:none;  stroke-width:2.06473;stroke-dasharray:none;stroke-opacity:1"
+       d="M 18.942636,0.0463322 V 336.75825"
+       id="to-contacts"
+       class="to-contacts"
+       sodipodi:nodetypes="cc"
+       inkscape:label="to-contacts" />
+    <path
+       style="fill:none;  stroke-width:2.06473;stroke-dasharray:none;stroke-opacity:1"
+       d="M 48.932223,-0.0724915 V 336.82712"
+       id="to-skills"
+       class="to-skills"
+       sodipodi:nodetypes="cc"
+       inkscape:label="to-skills" />
+    <path
+       style="fill:none;  stroke-width:2.06473;stroke-dasharray:none;stroke-opacity:1"
+       d="M 78.949839,0.0325328 V 336.74446"
+       id="to-projects"
+       class="to-projects"
+       inkscape:label="to-projects"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;  stroke-width:2.06473;stroke-dasharray:none;stroke-opacity:1"
+       d="M 108.94182,-0.02134697 V 336.69055"
+       id="to-bio"
+       class="to-bio"
+       sodipodi:nodetypes="cc"
+       inkscape:label="to-bio" />
+    <path
+       style="fill:none;  stroke-width:2.06473;stroke-dasharray:none;stroke-opacity:1"
+       d="M 138.93784,0.02517178 V 336.57622"
+       id="to-home"
+       class="to-home"
+       sodipodi:nodetypes="cc"
+       inkscape:label="to-home"
+       onmouseover="" />
+  </g>
+</svg>
