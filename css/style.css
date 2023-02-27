@@ -124,24 +124,18 @@ section {
 
 }
 
-/* #home>.page>.container {
-    margin-top: ;
-} */
-
 /* bio page */
 
+.profileImg {
+    width: 300px;
+}
+
 #bio>.page>.container {
-    padding: 12em
+    padding: 150px
 }
 
-#contacts > * {
-    max-height: 50em;
-}
-
-
-/* questo fa andare il testo sopra lo slide menu. Correggere dopo */
 #bioText {
-    translate: 200px;
+    translate: 140px;
 }
 
 #bio>.page>.container>img {
@@ -159,6 +153,7 @@ section {
 
 .col-right, .col-left {
     padding: 40px;
+    min-width: 470px;
 }
 
 .img-project {
@@ -415,6 +410,88 @@ width: calc(80% - 50px);
 
 }
 
+#contacts > * {
+    max-height: 50em;
+}
+
 #connections-contacts {
     overflow: visible;
+}
+
+/* responsive device */
+
+    /* telefoni */
+@media screen and (max-width: 480px) {
+    
+  
+    }
+
+    /* tablet */
+
+@media screen {
+    
+}
+
+    /* aggiustamenti */
+
+@media screen and (max-width: 700px) {
+    .profileImg {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #projects>.page>.container {
+        flex-flow: column-reverse;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+
+    #bio>.page>.container {
+        padding: unset ;
+    }
+
+    #bio>.page>.container>img {
+        display: none;
+    }
+
+    #bioText {
+        translate: unset;
+       
+    }
+
+    .side-menu, .linesFromProfile {
+        display: none;
+    }
+
+    #home>.page>.container {
+        margin-top: 250px;
+
+    }
+
+    .menu-items {
+        background-image: url('../img/backgroundMenu.png');
+        background-size: cover;
+        flex-direction: row;
+        transform: none;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: unset;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+
+    .col-left {
+        display: none;
+    }
+
+
 }
