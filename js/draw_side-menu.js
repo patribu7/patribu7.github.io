@@ -1040,7 +1040,7 @@ var profileLinesPlace = document.getElementById('linesProfile');
 
 var lightOn = 'rgb(0, 200, 255)';
 var lightOff = 'gray';
-var lightPosition = 'orange';
+var lightPosition = 'rgb(124, 107, 29)';
 
 // insert the svg into the DOM
 function drawLines() {
