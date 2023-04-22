@@ -13,6 +13,8 @@ h2 {
 p, input, button {
     font-size: 1.3em;
     color: rgb(120, 120, 120);
+    background-color: transparent;
+    border: none;
 }
 
 a, a:active, a:visited, a:hover {
@@ -222,8 +224,6 @@ width: calc(80% - 50px);
     width: 100%;
     border: none;
 }
-
-
 
 .filter-projects>form>input:focus {
     visibility: visible;

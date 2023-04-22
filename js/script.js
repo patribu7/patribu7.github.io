@@ -77,6 +77,7 @@ function getInputs(inputs) {
     
 }
 
+var viewAllProjs = document.getElementById('viewAllProjs');
 var inputFilter = document.getElementById('input-filter-projects');
 var projectsLi = document.getElementsByClassName('project');
 var report = document.getElementById('report');
@@ -101,6 +102,19 @@ inputFilter.addEventListener('input', function() {
         }
     }
     // ---------------------report-------------------------//
+    report.innerHTML = numberOfVisibleProjects;
+
+});
+
+viewAllProjs.addEventListener('click', function() {
+
+    inputFilter.value = '';
+    numberOfVisibleProjects = projectsLi.length
+
+    for (var i = 0; i < projectsLi.length; i++) {
+        var projectLi = projectsLi[i];
+        projectLi.style.display = '';
+}
     report.innerHTML = numberOfVisibleProjects;
 
 });
