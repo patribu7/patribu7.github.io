@@ -398,15 +398,19 @@ width: calc(80% - 50px);
     background-size: contain;
     align-items: center;
     height: 600px;
-    padding-left: 60px;
-    padding-right: 60px;
-
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 90%;
 }
 
-#contacts-list>li>a>img {
-    width: 80px;
-
+ul#contacts-list > li> a> img {
+    width: 70px;   
 }
+
+@media screen and (max-width: 1200px) {
+    ul#contacts-list > li> a> img {
+        width: 40px;  
+}}
 
 #contacts > * {
     max-height: 50em;
@@ -423,14 +427,6 @@ width: calc(80% - 50px);
 @media screen and (max-width: 700px) {
     .profileImg {
         width: 200px;
-    }
-
-}
-
-@media screen and (max-width: 1200px) {
-    #projects>.page>.container {
-        flex-flow: column-reverse;
-    }
 
 }
 
@@ -479,5 +475,14 @@ width: calc(80% - 50px);
         display: none;
     }
 
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    #projects>.page>.container {
+        flex-flow: column-reverse;
+    }
 
 }
