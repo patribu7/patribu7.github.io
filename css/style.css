@@ -158,9 +158,14 @@ section {
     min-width: 470px;
 }
 
-.img-project {
+.project-image {
     width: 100px;
     height: 100%;
+    margin: 15px;
+}
+
+.project-text {
+    margin: 20px;
 }
 
 .project {

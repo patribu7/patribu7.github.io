@@ -2,22 +2,22 @@
 
 var projects = 
     {
-        "project1": {
-            "header": "Project 1",
-            "textOverview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.",
-            "textDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-            "image": "img/projects/project1.jpg",
+        "irma": {
+            "header": "Irma 2.0",
+            "textOverview": "Registro bookshop",
+            "textDescription": "Semplice registro per tenere traccia di entrate e uscite merci in magazzino e registro di cassa. Realizzato con Google fogli con funzioni automatiche in GoogleScript",
+            "image": "img/projects/irma.svg",
             "externalLink": "",
-            "tags": ["tag1", "tag2", "tag3"],
+            "tags": ["Google Docs", "GoogleAppsScript"],
         },
     
-        "project2": {
-            "header": "Project 2",
-            "textOverview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.",
-            "textDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.",
-            "image": "img/projects/project2.jpg",
+        "button_pressed": {
+            "header": "Rileva la pressione di un bottone",
+            "textOverview": "Fatto con il Raspbarry i bot di Telegram e Python",
+            "textDescription": "decrizione.",
+            "image": "img/projects/button_pressed.svg",
             "externalLink": "",
-            "tags": ["tag1"],
+            "tags": ["python", "telegram", "raspbarry", "esercizio"],
     
         },
     };
@@ -46,15 +46,15 @@ function create(list) {
         projectTextOverview.innerHTML = projects[project].textOverview;
         projectText.appendChild(projectTextOverview);
         
-        var projectExternalLink = createElement('a', 'project-external-link');
-        projectExternalLink.href = projects[project].externalLink;
-        projectExternalLink.innerHTML = 'External Link';
-        projectText.appendChild(projectExternalLink);
-        
         var projectTags = createElement('p', 'project-tags');
         projectTags.innerHTML = projects[project].tags;
         projectText.appendChild(projectTags);
         
+        var projectExternalLink = createElement('a', 'project-external-link');
+        projectExternalLink.href = projects[project].externalLink;
+        projectExternalLink.innerHTML = 'External Link';
+        projectText.appendChild(projectExternalLink);
+
         var projectImage = createElement('img', 'project-image');
         projectImage.src = projects[project].image;
         projectLi.appendChild(projectImage);
