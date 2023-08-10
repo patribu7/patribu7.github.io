@@ -1,23 +1,48 @@
-// ---------------------futuro file json-------------------------//
+// ---------------------da convertire in file json-------------------------//
 
 var projects = 
     {
         "irma": {
             "header": "Irma 2.0",
             "textOverview": "Registro bookshop",
-            "textDescription": "Semplice registro per tenere traccia di entrate e uscite merci in magazzino e registro di cassa. Realizzato con Google fogli con funzioni automatiche in GoogleScript",
+            "textDescription": `Semplice registro per tenere traccia della contabilità e del magazzino di un piccolo negozio.\n
+            Realizzato per un bookshop annesso a museo con pochi volumi di vendita. Erano richieste:\n
+            - la gratuità degli strumenti;\n
+            - la possibilità di usarlo su più dispositivi;\n
+            - il divieto di installare programmi aggiuntivi;\n
+            Ha un sistema per registrare gli articoli di una vendita con il totale e il resto dovuto, in automatico registra le entrate in cassa e quali articoli sono stati venduti con la rispettiva data e operatore di vendita. Tiene traccia delle rimanenze di magazzino e fa un report giornaliero.\n
+            Realizzato ato con Google fogli con funzioni automatiche in GoogleScript
+            `,
             "image": "img/projects/irma.svg",
             "externalLink": "",
             "tags": ["Google Docs", "GoogleAppsScript"],
         },
     
         "button_pressed": {
-            "header": "Rileva la pressione di un bottone",
-            "textOverview": "Fatto con il Raspbarry i bot di Telegram e Python",
-            "textDescription": "decrizione.",
+            "header": "Hai premuto il bottone!",
+            "textOverview": "Invia un messaggio Telegram alla pressione di un bottone",
+            "textDescription": "Fatto per esercizio con Raspbarry, bot di Telegram e Python",
             "image": "img/projects/button_pressed.svg",
             "externalLink": "",
-            "tags": ["python", "telegram", "raspbarry", "esercizio"],
+            "tags": ["python", "telegram", "raspbarry", "esercizi"],
+    
+        },
+        "botChain": {
+            "header": "botChain",
+            "textOverview": "Report automatico sul valore delle blockchain",
+            "textDescription": "Un esercizio per utilizzare le API e python per conoscere in tempo reale i dati.\n Esercizio svolto per Start2Impact.",
+            "image": "img/projects/botChain.svg",
+            "externalLink": "",
+            "tags": ["python", "esercizi"],
+    
+        },
+        "spake": {
+            "header": "Spake",
+            "textOverview": "Un clone di Snake",
+            "textDescription": "Un esercizio su pygame. Ancora in fase di completamento, ma funzionante.",
+            "image": "img/projects/spake.svg",
+            "externalLink": "",
+            "tags": ["python", "pygame", "esercizi"],
     
         },
     };
@@ -45,9 +70,13 @@ function create(list) {
         var projectTextOverview = createElement('p', 'project-text-overview');
         projectTextOverview.innerHTML = projects[project].textOverview;
         projectText.appendChild(projectTextOverview);
+
+        var projectTextDescription = createElement('p', 'project-text-description');
+        projectTextDescription.innerHTML = projects[project].textDescription;
+        projectText.appendChild(projectTextDescription);
         
         var projectTags = createElement('p', 'project-tags');
-        projectTags.innerHTML = projects[project].tags;
+        projectTags.innerHTML = '🏷 ' + projects[project].tags.join(', ');
         projectText.appendChild(projectTags);
         
         var projectExternalLink = createElement('a', 'project-external-link');

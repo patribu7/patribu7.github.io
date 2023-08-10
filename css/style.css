@@ -168,6 +168,15 @@ section {
     margin: 20px;
 }
 
+.project-text-description {
+    display: none; /*display, non visibility, altrimenti non contrae lo spazio*/
+}
+
+.project-tags {
+    font-size: small;
+    font-style: italic;
+}
+
 .project {
     display: flex;
     justify-content: center;
