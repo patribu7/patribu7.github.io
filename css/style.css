@@ -141,7 +141,7 @@ section {
     translate: 140px;
 }
 
-#bio>.page>.container>img {
+#bio > .page > .container > img {
     position: relative;
     margin: -270px 0 0 -270px;
     width: 100%;
@@ -153,6 +153,11 @@ section {
 }
 
 /*stile progetti*/
+
+    /* showbox */
+.carousel-inner {
+    width: 90%;
+}
 
 .col-right, .col-left {
     padding: 40px;
@@ -219,15 +224,15 @@ section {
     padding-right: 30px;
 }
 
-.list-projects>:nth-child(even) > .project-main {
+.list-projects > :nth-child(even) > .project-main {
    flex-direction: row;
 }
 
-.list-projects>:nth-child(odd) > .project-main {
+.list-projects > :nth-child(odd) > .project-main {
     flex-direction: row-reverse;
 }
 
-.list-projects>:nth-child(even) > .project-main > .project-text * {
+.list-projects > :nth-child(even) > .project-main > .project-text * {
     text-align: right;
 
 }
@@ -253,7 +258,7 @@ width: calc(80% - 50px);
 
 }
 
-.filter-projects>form>input {
+.filter-projects > form > input {
     border-bottom: solid 4px gray;
 
 }
@@ -264,7 +269,7 @@ width: calc(80% - 50px);
     height: 50px;
 }
 
-.filter-projects>form * {
+.filter-projects > form * {
     font-size: 12pt;
     color: gray;
     font-family: 'Courier New', Courier, monospace;
@@ -273,7 +278,7 @@ width: calc(80% - 50px);
     border: none;
 }
 
-.filter-projects>form>input:focus {
+.filter-projects > form > input:focus {
     visibility: visible;
     border-color: gray;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(58, 59, 58, 0.6);
@@ -310,29 +315,29 @@ width: calc(80% - 50px);
     box-shadow: inset 0 0 20px rgb(147, 107, 70);
 }
 
-.card>div {
+.card > div {
     width: 30px;
     position: absolute;
 }
 
-.card>div:first-child {
+.card > div:first-child {
     left: 0;
     top: 0;
     margin: 3px;
 }
 
-.card>div:last-child {
+.card > div:last-child {
     right: 0;
     bottom: 0;
     margin: 3px;
 
 }
 
-.card>div:last-child>img, .card>div:last-child>p {
+.card > div:last-child > img, .card > div:last-child > p {
     transform: rotate(180deg);
 }
 
-.card>div>img {
+.card > div > img {
     width: 100%;
     fill: blue
 }
@@ -341,22 +346,22 @@ width: calc(80% - 50px);
     text-transform: uppercase;
 }
 
-.card>a>p, .card>div>p {
+.card > a> p, .card > div > p {
     font-size: 18pt;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 }
 
-.card>div>p {
+.card > div > p {
     font-weight: bold;
 }
 
-.programmazione>a>p, .programmazione>div>p {
+.programmazione > a > p, .programmazione>div>p {
     color:darkblue;
 }
 
-.design>a>p, .design>div>p {
+.design > a > p, .design > div > p {
     color:darkred;
 }
 
@@ -370,7 +375,7 @@ width: calc(80% - 50px);
     margin-right: 25px;
 }
 
-.side-menu>svg {
+.side-menu > svg {
     width: 160px;
     height: calc(100% - 160px);
     position: relative;
@@ -378,7 +383,7 @@ width: calc(80% - 50px);
 
 }
 
-.side-menu>svg:first-child {
+.side-menu > svg:first-child {
     height: 160px;
    
 }
@@ -405,11 +410,11 @@ width: calc(80% - 50px);
 
 }
 
-.menu-items>li>a>span:hover {
+.menu-items > li > a > span:hover {
     color: rgb(124, 107, 29);
 }
 
-.menu-items>li>a>span:active {
+.menu-items > li > a > span:active {
     color: rgb(0, 200, 255);
 }
 
@@ -417,7 +422,7 @@ width: calc(80% - 50px);
     margin: 0;
 }
 
-.menu-items>li>a>span {
+.menu-items > li > a > span {
     font-size: 21pt;
     color: gray;
     font-family: 'Courier New', Courier, monospace;
@@ -430,11 +435,6 @@ width: calc(80% - 50px);
     stroke: gray;
 }
 
-
-/* showbox */
-.carousel-inner {
-    width: 90%;
-}
 
 /* contatti */
 
@@ -450,14 +450,15 @@ width: calc(80% - 50px);
     width: 90%;
 }
 
-ul#contacts-list > li> a> img {
+ul#contacts-list > li> a > img {
     width: 70px;   
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 930px) {
     ul#contacts-list > li> a> img {
-        width: 40px;  
-}}
+        width: 30px;  
+}
+}
 
 #contacts > * {
     max-height: 50em;
@@ -479,11 +480,11 @@ ul#contacts-list > li> a> img {
 
 @media screen and (max-width: 930px) {
 
-    #bio>.page>.container {
+    #bio > .page > .container {
         padding: unset ;
     }
 
-    #bio>.page>.container>img {
+    #bio > .page > .container > img {
         display: none;
     }
 
@@ -510,8 +511,12 @@ ul#contacts-list > li> a> img {
         top: 0;
         left: 0;
         width: unset;
-        justify-content: space-between;
-        height: 60px;
+        justify-content: space-around;
+        height: 40px;
+    }
+
+    .menu-items> li > a > span {
+        font-size: 16pt;
     }
 
     .header {
