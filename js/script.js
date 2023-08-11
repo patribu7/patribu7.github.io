@@ -1,4 +1,4 @@
-// ---------------------da convertire in file json-------------------------//
+// ---------------------dizionario da convertire in file json-------------------------//
 
 var projects = 
     {
@@ -158,11 +158,21 @@ deckProgrammer = ['python', 'javascript', 'html5', 'css3'];
 deckDesigner = ['photoshop', 'inkscape', 'procreate'];
 cards = [];
 
-function addToDeck(skill, type, num = 1) {
+function addToDeck(skill, type) {
     var card = document.createElement("div");
-    // aggiungi due classi alla card
+    // aggiungo due classi alla card
     card.classList.add('card', type);
 
+    //definisco il numero della carta. Se la skill corrisponde ad un tag nei progetti incrementa di uno il numero fino ad arrivare al numero di progetti con tale tag
+    var num = 0
+    for (var project in projects) {
+        for (var tag in projects[project].tags) {
+            if (skill.toLowerCase() === projects[project].tags[tag].toLowerCase()) {
+                num = num+1                    
+            }
+    }
+    }
+    
     firstDiv = card.appendChild(document.createElement('div'));
     firstNum = firstDiv.appendChild(document.createElement('p'));
     firstNum.innerHTML = num;
