@@ -284,7 +284,7 @@ var straightLines = `
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
 id="svg5817"
-viewBox="0 0 160 1600"
+viewBox="0 0 160 1000"
 version="1.1"
 sodipodi:docname="lines.svg"
 inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"

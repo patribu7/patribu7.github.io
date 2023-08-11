@@ -12,6 +12,7 @@ h2 {
 
 p, input, button {
     font-size: 1.3em;
+    font-family:;
     color: rgb(120, 120, 120);
     background-color: transparent;
     border: none;
@@ -112,7 +113,6 @@ body {
     display:block;
     width: 100%;
     padding-top: 0;
-    padding-bottom: 40em;
     
 }
 
