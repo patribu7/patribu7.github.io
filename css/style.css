@@ -5,7 +5,7 @@
 
 h2 {
     margin-top: 33px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-right: 15px;
     color: gray;
 }
@@ -20,6 +20,7 @@ p, input, button {
 a, a:active, a:visited, a:hover {
     text-decoration: none;
     color: rgb(120, 120, 120);
+    display: block; /*per farlo funzionare con text-align: come un <p>*/
 }
 
 li {
@@ -158,6 +159,11 @@ section {
     min-width: 470px;
 }
 
+.col-right > div {
+    margin-bottom : 10px;
+    align-items: center;
+}
+
 .project {
     margin-top: 30px;
 }
@@ -275,10 +281,9 @@ width: calc(80% - 50px);
 }
 
 .filter-report {
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 10pt;
-    text-align: left;
-    
+    text-align: left;    
 }
 
 
