@@ -138,12 +138,13 @@ section {
 }
 
 #bioText {
-    translate: 140px;
+    translate: 225px;
+    margin-right: 85px;
 }
 
 #bio > .page > .container > img {
     position: relative;
-    margin: -270px 0 0 -270px;
+    margin: -500px 0 0 -270px;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -151,6 +152,8 @@ section {
     mix-blend-mode: multiply;
     opacity: 0.3;
 }
+
+
 
 /*stile progetti*/
 
@@ -454,12 +457,6 @@ ul#contacts-list > li> a > img {
     width: 70px;   
 }
 
-@media screen and (max-width: 930px) {
-    ul#contacts-list > li> a> img {
-        width: 30px;  
-}
-}
-
 #contacts > * {
     max-height: 50em;
 }
@@ -472,25 +469,10 @@ ul#contacts-list > li> a > img {
 
     /* aggiustamenti */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 726px) {
+    
     .profileImg {
         width: 200px;
-
-}
-
-@media screen and (max-width: 930px) {
-
-    #bio > .page > .container {
-        padding: unset ;
-    }
-
-    #bio > .page > .container > img {
-        display: none;
-    }
-
-    #bioText {
-        translate: unset;
-       
     }
 
     .side-menu, .linesFromProfile {
@@ -498,7 +480,8 @@ ul#contacts-list > li> a > img {
     }
 
     #home>.page>.container {
-        margin-top: 60px;
+        padding-top: 40px;
+        padding-bottom: 280px;
 
     }
 
@@ -527,9 +510,37 @@ ul#contacts-list > li> a > img {
         display: none;
     }
 
+    #contacts {
+        padding-bottom: 150px;
+    }
 
+    ul#contacts-list > li > a > img {
+        width: 40px;
+    }
 
+    ul#contacts-list {
+        width: 100%;
+    }
 
+    #contacts > .page > .container {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #bio > .page > .container {
+        padding: 30px ;
+        margin-left: 50px;
+    }
+
+    #bio > .page > .container > img {
+        display: none;
+    }
+
+    #bioText {
+        translate: unset;
+       
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -537,4 +548,14 @@ ul#contacts-list > li> a > img {
         flex-flow: column-reverse;
     }
 
+}
+
+@media screen and (min-width: 726px) and (max-width: 1035px) {
+    #contacts {
+        padding-bottom: 150px;
+    }
+    
+    ul#contacts-list > li > a > img {
+        width: 35px;
+    }
 }
