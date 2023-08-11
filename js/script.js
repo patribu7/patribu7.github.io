@@ -5,12 +5,12 @@ var projects =
         "irma": {
             "header": "Irma 2.0",
             "textOverview": "Registro bookshop",
-            "textDescription": `Semplice registro per tenere traccia della contabilità e del magazzino di un piccolo negozio.\n
-            Realizzato per un bookshop annesso a museo con pochi volumi di vendita. Erano richieste:\n
-            - la gratuità degli strumenti;\n
-            - la possibilità di usarlo su più dispositivi;\n
-            - il divieto di installare programmi aggiuntivi;\n
-            Ha un sistema per registrare gli articoli di una vendita con il totale e il resto dovuto, in automatico registra le entrate in cassa e quali articoli sono stati venduti con la rispettiva data e operatore di vendita. Tiene traccia delle rimanenze di magazzino e fa un report giornaliero.\n
+            "textDescription": `Semplice registro per tenere traccia della contabilità e del magazzino di un piccolo negozio.</br>
+            Realizzato per un bookshop annesso a museo con pochi volumi di vendita. Erano richieste:</br>
+            - la gratuità degli strumenti;</br>
+            - la possibilità di usarlo su più dispositivi;</br>
+            - il divieto di installare programmi aggiuntivi;</br>
+            Ha un sistema per registrare gli articoli di una vendita con il totale e il resto dovuto, in automatico registra le entrate in cassa e quali articoli sono stati venduti con la rispettiva data e operatore di vendita. Tiene traccia delle rimanenze di magazzino e fa un report giornaliero.</br>
             Realizzato ato con Google fogli con funzioni automatiche in GoogleScript
             `,
             "image": "img/projects/irma.svg",
@@ -30,7 +30,7 @@ var projects =
         "botChain": {
             "header": "botChain",
             "textOverview": "Report automatico sul valore delle blockchain",
-            "textDescription": "Un esercizio per utilizzare le API e python per conoscere in tempo reale i dati.\n Esercizio svolto per Start2Impact.",
+            "textDescription": "Un esercizio per utilizzare le API e python per conoscere in tempo reale i dati.</br> Esercizio svolto per Start2Impact.",
             "image": "img/projects/botChain.svg",
             "externalLink": "",
             "tags": ["python", "esercizi"],
@@ -60,35 +60,38 @@ function createElement(type, className) {
 function create(list) {
     for (var project in list) {
         var projectLi = createElement('li', 'project');
-
-        var projectText = createElement('div', 'project-text');
+        var projectMain = createElement('div', 'project-main'); /*contiene projectMainText e projectImage*/
+        var projectMainText = createElement('div', 'project-text');
+        var projectDescription = createElement('div', 'project-description'); /*contiene projectTextDescription*/
 
         var projectHeader = createElement('h3', 'project-header');
         projectHeader.innerHTML = projects[project].header;
-        projectText.appendChild(projectHeader);
+        projectMainText.appendChild(projectHeader);
         
         var projectTextOverview = createElement('p', 'project-text-overview');
         projectTextOverview.innerHTML = projects[project].textOverview;
-        projectText.appendChild(projectTextOverview);
-
-        var projectTextDescription = createElement('p', 'project-text-description');
-        projectTextDescription.innerHTML = projects[project].textDescription;
-        projectText.appendChild(projectTextDescription);
+        projectMainText.appendChild(projectTextOverview);
         
         var projectTags = createElement('p', 'project-tags');
         projectTags.innerHTML = '🏷 ' + projects[project].tags.join(', ');
-        projectText.appendChild(projectTags);
+        projectMainText.appendChild(projectTags);
         
         var projectExternalLink = createElement('a', 'project-external-link');
         projectExternalLink.href = projects[project].externalLink;
         projectExternalLink.innerHTML = 'External Link';
-        projectText.appendChild(projectExternalLink);
+        projectMainText.appendChild(projectExternalLink);
+        
+        var projectTextDescription = createElement('p', 'project-text-description');
+        projectTextDescription.innerHTML = projects[project].textDescription;
+        projectDescription.appendChild(projectTextDescription);
 
         var projectImage = createElement('img', 'project-image');
         projectImage.src = projects[project].image;
-        projectLi.appendChild(projectImage);
-
-        projectLi.appendChild(projectText);
+        
+        projectMain.appendChild(projectImage);
+        projectMain.appendChild(projectMainText);
+        projectLi.appendChild(projectMain);
+        projectLi.appendChild(projectDescription);
 
         projectsInplace.appendChild(projectLi);
     }

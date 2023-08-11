@@ -158,6 +158,23 @@ section {
     min-width: 470px;
 }
 
+.project {
+    margin-top: 30px;
+}
+
+.project *:hover {
+    color: darkred;
+}
+
+.project:hover .project-description > .project-text-description {
+    display: block;
+}
+
+.list-projects > :nth-child(1) { 
+    margin-top: 0;
+
+}
+
 .project-image {
     width: 100px;
     height: 100%;
@@ -166,10 +183,16 @@ section {
 
 .project-text {
     margin: 20px;
+    width: 280px;
 }
 
 .project-text-description {
-    display: none; /*display, non visibility, altrimenti non contrae lo spazio*/
+    font-size: small;
+
+}
+
+.project-text-description {
+    display: none;
 }
 
 .project-tags {
@@ -177,12 +200,11 @@ section {
     font-style: italic;
 }
 
-.project {
+.project-main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin-block-end: 50px;
 }
 
 .list-projects {
@@ -191,13 +213,19 @@ section {
     padding-right: 30px;
 }
 
-.list-projects>:nth-child(even) {
+.list-projects>:nth-child(even) > .project-main {
    flex-direction: row;
 }
 
-.list-projects>:nth-child(odd) {
+.list-projects>:nth-child(odd) > .project-main {
     flex-direction: row-reverse;
 }
+
+.list-projects>:nth-child(even) > .project-main > .project-text * {
+    text-align: right;
+
+}
+
     /* slideshow */
 .indicators {
     width: 60%;
