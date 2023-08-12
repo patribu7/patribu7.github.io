@@ -8,6 +8,7 @@ h2 {
     margin-bottom: 30px;
     margin-right: 15px;
     color: gray;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 p, input, button {
@@ -521,6 +522,7 @@ ul#contacts-list > li> a > img {
 
     ul#contacts-list {
         width: 100%;
+        gap: 28px;
     }
 
     #contacts > .page > .container {
