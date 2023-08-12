@@ -3,11 +3,17 @@
     padding: 0;
 }
 
+h1 {
+    color: #9b532f;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: xx-large;
+}
+
 h2 {
     margin-top: 33px;
     margin-bottom: 30px;
     margin-right: 15px;
-    color: gray;
+    color: rgb(76, 76, 76);
     font-family: 'Fredericka the Great', cursive;
 }
 
