@@ -1104,7 +1104,6 @@ function addEventListenerToMenuItems() {
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
          lightControl(linesSelected, "lines", lightPosition);
-         // errore perche' non trova l'header home, ma basta escluderlo, sempre che non lo voglia aggiungere
          lightControl(headerSelected, "header", lightPosition);
 
       });
@@ -1114,14 +1113,12 @@ function addEventListenerToMenuItems() {
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
          lightControl(linesSelected, "lines", lightOff);
-         // errore perche' non trova l'header home, ma basta escluderlo, sempre che non lo voglia aggiungere
          lightControl(headerSelected, "header", lightOff);
 
       });
    };
 
 };
-
 
 drawLines();
 addEventListenerToMenuItems();
