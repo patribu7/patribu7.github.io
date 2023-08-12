@@ -499,7 +499,8 @@ ul#contacts-list > li> a > img {
     }
 
     .menu-items> li > a > span {
-        font-size: 16pt;
+        font-size: 14pt;
+        letter-spacing: -1.8px;
     }
 
     .header {
