@@ -45,6 +45,14 @@ var projects =
             "tags": ["python", "pygame", "esercizi"],
     
         },
+        "contatore_lua": {
+            "header": "contatore di Lupi",
+            "textOverview": "deathcounter per Twitch",
+            "textDescription": "Un sempice contatore da implemantare facilmente in OBS Studio per tenere il conto durante le dirette Twitch",
+            "image": "img/projects/contatore_lua.svg",
+            "externalLink": "",
+            "tags": ["lua", "Twitch", "OBS Studio"],
+        }
     };
 
 // ---------------------create list projects-------------------------//
@@ -155,8 +163,8 @@ viewAllProjs.addEventListener('click', function() {
 
 deckDiv = document.getElementById("deck");
 let deckProgrammer = ['python', 'javascript', 'Html&Css', 'GoogleApps<br/>Script', 'raspberry Pi', 'lua'];
-let deckDesigner = ['photoshop', 'inkscape', 'procreate'];
-let deckPlatform = ['telegram', 'twitch']
+let deckDesigner = ['photoshop', 'inkscape', 'procreate', 'OBS Studio'];
+let deckPlatform = ['telegram', 'twitch' ]
 let cards = [];
 
 function addToDeck(skill, type) {
