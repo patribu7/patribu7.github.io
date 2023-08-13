@@ -21,10 +21,10 @@ var projects =
         "button_pressed": {
             "header": "Hai premuto il bottone!",
             "textOverview": "Invia un messaggio Telegram alla pressione di un bottone",
-            "textDescription": "Fatto per esercizio con Raspbarry, bot di Telegram e Python",
+            "textDescription": "Fatto per esercizio con Raspbarry Pi, bot di Telegram e Python",
             "image": "img/projects/button_pressed.svg",
             "externalLink": "",
-            "tags": ["python", "telegram", "raspbarry", "esercizi"],
+            "tags": ["python", "telegram", "raspberry Pi", "esercizi"],
     
         },
         "botChain": {
@@ -154,9 +154,10 @@ viewAllProjs.addEventListener('click', function() {
 // ---------------------skills card-------------------------//
 
 deckDiv = document.getElementById("deck");
-deckProgrammer = ['python', 'javascript', 'html5', 'css3'];
-deckDesigner = ['photoshop', 'inkscape', 'procreate'];
-cards = [];
+let deckProgrammer = ['python', 'javascript', 'Html&Css', 'GoogleApps<br/>Script', 'raspberry Pi', 'lua'];
+let deckDesigner = ['photoshop', 'inkscape', 'procreate'];
+let deckPlatform = ['telegram', 'twitch']
+let cards = [];
 
 function addToDeck(skill, type) {
     var card = document.createElement("div");
@@ -166,12 +167,14 @@ function addToDeck(skill, type) {
     //definisco il numero della carta. Se la skill corrisponde ad un tag nei progetti incrementa di uno il numero fino ad arrivare al numero di progetti con tale tag
     var num = 0
     for (var project in projects) {
-        for (var tag in projects[project].tags) {
-            if (skill.toLowerCase() === projects[project].tags[tag].toLowerCase()) {
-                num = num+1                    
+        for (var index_tag in projects[project].tags) {
+            var tag = projects[project].tags[index_tag]
+            var textSkill = skill.replaceAll('<br/>', '');
+            if (textSkill.toLowerCase() === tag.toLowerCase()) {
+                num += 1                    
             }
     }
-    }
+    };
     
     firstDiv = card.appendChild(document.createElement('div'));
     firstNum = firstDiv.appendChild(document.createElement('p'));
@@ -198,12 +201,16 @@ function addToDeck(skill, type) {
 };
 
 deckProgrammer.forEach(card => {
-    addToDeck(card, 'programmazione');
+    addToDeck(card, 'coding');
     
 });
 
 deckDesigner.forEach(card => {
     addToDeck(card, 'design');
+});
+
+deckPlatform.forEach(card => {
+    addToDeck(card, 'platform');
 });
 
 cards.forEach(card => {
