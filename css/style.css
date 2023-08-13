@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+p::selection, a::selection, h1::selection, h2::selection, h3::selection, img::selection, div::selection, span::selection, strong::selection {
+ background-color: #80d21e;
+ color:rgb(0, 0, 0)
+}
+
 h1 {
     color: #9b532f;
     font-family: 'Fredericka the Great', cursive;
