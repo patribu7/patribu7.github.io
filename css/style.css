@@ -28,7 +28,7 @@ p, input, button {
 a, a:active, a:visited, a:hover {
     text-decoration: none;
     color: rgb(120, 120, 120);
-    display: block; /*per farlo funzionare con text-align: come un <p>*/
+    display: inherit; /*cosi' funziona con text-align: come un <p> nella lista progetti e per il resto funziona inline*/
 }
 
 li {
@@ -140,27 +140,40 @@ section {
     width: 300px;
 }
 
-#bio>.page>.container {
-    padding: 150px
+#bio > .page > .container {
+    max-width: 100%;
+    background-image: url('/img/photoBio.png');
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    margin-left: -5px;
 }
 
 #bioText {
-    translate: 225px;
-    margin-right: 85px;
+    display: flex;
+    gap: 10%;
+    justify-content: end;
+    margin-top: 30px;
+    margin-right: 13%;
+    margin-bottom: 50px;
 }
 
-#bio > .page > .container > img {
-    position: relative;
-    margin: -500px 0 0 -270px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    mix-blend-mode: multiply;
-    opacity: 0.3;
+#bioText > p > a {
+    color: darkred;
+    display: inline;
+}
+
+#bioText > p {
+    min-width: 250px;
+    width: 200px;
 }
 
 
+#bioText br {
+    display: block;
+    margin: 2em;
+    font-size: 30% 
+}
 
 /*stile progetti*/
 
@@ -355,7 +368,9 @@ width: calc(80% - 50px);
     text-transform: uppercase;
 }
 
-
+.card> a {
+    display: block;
+}
 
 .card > a > p, .card > div > p {
     font-size: 18pt;
@@ -546,27 +561,29 @@ ul#contacts-list > li> a > img {
         max-width: none;
     }
 }
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1360px) {
     #bio > .page > .container {
-        padding: 30px ;
-        margin-left: 50px;
-    }
+        background-size: 800px;
 
-    #bio > .page > .container > img {
-        display: none;
     }
-
     #bioText {
-        translate: unset;
-       
+        margin-right: 8%;
     }
-}
-
+}    
 @media screen and (max-width: 1200px) {
     #projects>.page>.container {
         flex-flow: column-reverse;
     }
+    
+    #bio > .page > .container {
+        background-image: none;
+    }
+
+    #bioText {
+        justify-content: center;
+        margin: 20px;
+    }
+}
 
 }
 
@@ -578,4 +595,17 @@ ul#contacts-list > li> a > img {
     ul#contacts-list > li > a > img {
         width: 35px;
     }
+}
+
+@media screen and (max-width: 1000px) {
+    #bioText {
+        display: block;
+        margin: 50px;
+    }
+
+    #bioText > p {
+        width: auto;
+    }
+
+
 }
