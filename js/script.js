@@ -52,6 +52,15 @@ var projects =
             "image": "img/projects/contatore_lua.svg",
             "externalLink": "",
             "tags": ["lua", "Twitch", "OBS Studio"],
+        },
+
+        "this_site": {
+            "header": "Questa webpage",
+            "textOverview": "Webpage per mettere in vetrina i miei progetti",
+            "textDescription": "Realizzato come compito per Start 2 Impact University",
+            "image": "img/projects/this_site.svg",
+            "externalLink": "",
+            "tags": ["Inkscape", "Html&Css", "JavaScript", "Photoshop"],
         }
     };
 
