@@ -15,7 +15,7 @@ var projects =
             `,
             "image": "img/projects/irma.svg",
             "externalLink": "",
-            "tags": ["Google Docs", "GoogleAppsScript"],
+            "tags": ["Google Docs", "Google Apps Script"],
         },
     
         "button_pressed": {
@@ -60,7 +60,7 @@ var projects =
             "textDescription": "Realizzato come compito per Start 2 Impact University",
             "image": "img/projects/this_site.svg",
             "externalLink": "",
-            "tags": ["Inkscape", "Html&Css", "JavaScript", "Photoshop"],
+            "tags": ["Inkscape", "Html&Css", "JavaScript", "Gimp"],
         }
     };
 
@@ -171,13 +171,21 @@ viewAllProjs.addEventListener('click', function() {
 // ---------------------skills card-------------------------//
 
 deckDiv = document.getElementById("deck");
-let deckProgrammer = ['python', 'javascript', 'Html&Css', 'GoogleApps<br/>Script', 'raspberry Pi', 'lua'];
-let deckDesigner = ['photoshop', 'inkscape', 'procreate', 'OBS Studio'];
+let deckProgrammer = ['python', 'javascript', 'Html&Css', 'Google Apps<br/>Script', 'raspberry Pi', 'lua'];
+let deckDesigner = ['gimp', 'inkscape', 'OBS Studio'];
 let deckPlatform = ['telegram', 'twitch' ]
 let cards = [];
 
+function cleanCharsetToUrl(char) {
+    let urlChar
+    urlChar = char.replaceAll(' ', '-');
+    urlChar = urlChar.replaceAll('<br/>', '-');
+    return urlChar
+};
+
 function addToDeck(skill, type) {
     var card = document.createElement("div");
+
     // aggiungo due classi alla card
     card.classList.add('card', type);
 
@@ -186,18 +194,18 @@ function addToDeck(skill, type) {
     for (var project in projects) {
         for (var index_tag in projects[project].tags) {
             var tag = projects[project].tags[index_tag]
-            var textSkill = skill.replaceAll('<br/>', '');
+            var textSkill = skill.replaceAll('<br/>', ' ');
             if (textSkill.toLowerCase() === tag.toLowerCase()) {
                 num++                    
             }
-    }
+        }
     };
     
     firstDiv = card.appendChild(document.createElement('div'));
     firstNum = firstDiv.appendChild(document.createElement('p'));
     firstNum.innerHTML = num;
-    firstImg = firstDiv.appendChild(document.createElement('img'));
-    firstImg.src = 'img/cards/' + skill + '.svg';
+    firstImg = firstDiv.appendChild(document.createElement('img')); 
+    firstImg.src = 'img/cards/' + cleanCharsetToUrl(skill)  + '.svg';
         
     //aggiungo il nome della skill
     skillName = card.appendChild(document.createElement('a'));
@@ -207,7 +215,7 @@ function addToDeck(skill, type) {
 
     lastDiv = card.appendChild(document.createElement('div'));
     lastImg = lastDiv.appendChild(document.createElement('img'));
-    lastImg.src = 'img/cards/' + skill + '.svg';
+    lastImg.src = 'img/cards/' + cleanCharsetToUrl(skill) + '.svg';
     lastNum = lastDiv.appendChild(document.createElement('p'));
     lastNum.innerHTML = num;
     
