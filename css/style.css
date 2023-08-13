@@ -503,9 +503,22 @@ ul#contacts-list > li> a > img {
     overflow: visible;
 }
 
-/* responsive device */
+/* footer */
 
-    /* aggiustamenti */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/img/backgroundMenu.png");
+    padding-top: 30px;
+}
+
+ footer a:link, a:visited, a:active {
+    color: darkred;
+    display: inline;
+ }
+
+
+/* responsive device */
 
 @media screen and (max-width: 726px) {
     

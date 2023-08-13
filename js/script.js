@@ -179,7 +179,7 @@ function addToDeck(skill, type) {
             var tag = projects[project].tags[index_tag]
             var textSkill = skill.replaceAll('<br/>', '');
             if (textSkill.toLowerCase() === tag.toLowerCase()) {
-                num += 1                    
+                num++                    
             }
     }
     };
@@ -226,4 +226,16 @@ cards.forEach(card => {
         inputFilter.value = card.getElementsByTagName('a')[0].innerText;
         inputFilter.dispatchEvent(new Event('input'));
     });
-})
+});
+
+// ---------------------credits-------------------------//
+
+let btnCredits = document.getElementById('btnCredits')
+btnCredits.addEventListener('click', function() {
+    if (credits.style.display === 'none') {
+        credits.style.display = 'block';
+
+    } else if (credits.style.display === 'block') {
+        credits.style.display = 'none';
+    }
+});
