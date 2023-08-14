@@ -252,7 +252,7 @@ btnCredits.addEventListener('click', function() {
     if (credits.style.display === 'none') {
         credits.style.display = 'block';
         btnCredits.innerHTML = 'Credits ⩟';
-        window.scrollByLines(20);
+        window.scrollByLines(50);
 
     } else if (credits.style.display === 'block') {
         window.scrollByLines(-20);

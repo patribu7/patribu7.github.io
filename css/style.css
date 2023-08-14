@@ -431,7 +431,7 @@ width: calc(80% - 50px);
 
 .menu-items {
     position: fixed;
-    z-index: 100;
+    z-index: 2;
     top: 280px;
     right: 15px;
     min-width: 150px;
@@ -496,13 +496,13 @@ ul#contacts-list > li> a > img {
     opacity: 0.5;  
 }
 
-ul#contacts-list > li> :hover {
+ul#contacts-list > li:hover, ul#contacts-list > li:active{
     background-image: url("/img/contacts/hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-ul#contacts-list > li> a > img:hover{
+ul#contacts-list > li> a > img:hover, ul#contacts-list > li> a > img:active{
     opacity: 1;
 
 }
@@ -521,17 +521,43 @@ footer {
     display: flex;
     justify-content: space-around;
     background-image: url("/img/backgroundFooter.png");
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: repeat-x;
-    padding-top: 30px;
-    height: 300px;
+    padding-top: 0px;
+    min-height: 100px;
+    font-size: 12pt;
+
 }
 
- footer a:link, a:visited, a:active {
+#credits {
+    text-align: right;
+}
+
+footer a:link, a:visited, a:active {
     color: darkred;
     display: inline;
  }
 
+ footer > div > button {
+    background-color: rgba(255, 228, 196, 0.474);
+    z-index: 10;
+    border-radius: 13px;
+    padding: 5px;
+    box-shadow: 0 1px 1px rgba(172, 133, 86, 0.273) inset, 0 0 8px rgba(94, 52, 18, 0.6);
+ }
+
+
+#spaceCredits {
+    display: block;
+    margin: 6em;
+    font-size: 30% 
+}
+
+@media screen and (min-width: 1200px) {
+    #spaceCredits {
+        margin: 14em;
+    }
+}
 
 /* responsive device */
 
@@ -641,6 +667,5 @@ footer {
     #bioText > p {
         width: auto;
     }
-
 
 }
