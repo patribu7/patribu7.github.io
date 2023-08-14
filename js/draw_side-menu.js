@@ -280,6 +280,7 @@ var profileLines = `
 </svg>
 `
 
+//   diminuire l'ultimo numero della matrice (transform="matrix) per avere linee piu' lunghe quando aumentano le carte
 var straightLines = `
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
@@ -298,7 +299,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
   id="lines"
   class="SVGlines"
   inkscape:label="lines"
-  transform="matrix(1.0008427,0,0,1.0666667,5.0929707,-500.6277611)"
+  transform="matrix(1.0008427,0,0,1.0666667,5.0929707,-1000.6277611)"
   style="stroke-width:2.0647213;stroke-dasharray:none;stroke-opacity:1">
  <path
     style="fill:none; ;stroke-width:2.06472;stroke-dasharray:none;stroke-opacity:1"
