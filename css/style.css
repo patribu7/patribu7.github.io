@@ -480,19 +480,31 @@ width: calc(80% - 50px);
 /* contatti */
 
 #contacts-list {
-    background-image: url("../img/contacts/contactsBackground.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     align-items: center;
     height: 600px;
     padding-left: 80px;
     padding-right: 80px;
     width: 90%;
+    /* lascio le impostazioni del background-image in caso la dovessi aggiungere di nuovo; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 ul#contacts-list > li> a > img {
-    width: 70px;   
+    width: 70px;
+    opacity: 0.5;  
+}
+
+ul#contacts-list > li> :hover {
+    background-image: url("/img/contacts/hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul#contacts-list > li> a > img:hover{
+    opacity: 1;
+
 }
 
 #contacts > * {
@@ -508,8 +520,11 @@ ul#contacts-list > li> a > img {
 footer {
     display: flex;
     justify-content: space-around;
-    background-image: url("/img/backgroundMenu.png");
+    background-image: url("/img/backgroundFooter.png");
+    background-size: 50%;
+    background-repeat: repeat-x;
     padding-top: 30px;
+    height: 300px;
 }
 
  footer a:link, a:visited, a:active {
@@ -567,7 +582,7 @@ footer {
     }
 
     ul#contacts-list > li > a > img {
-        width: 40px;
+        width: 55px;
     }
 
     ul#contacts-list {
@@ -589,7 +604,7 @@ footer {
     }
 }    
 @media screen and (max-width: 1200px) {
-    #projects>.page>.container {
+    #projects > .page> .container {
         flex-flow: column-reverse;
     }
     
@@ -603,15 +618,17 @@ footer {
     }
 }
 
-}
-
 @media screen and (min-width: 726px) and (max-width: 1035px) {
     #contacts {
         padding-bottom: 150px;
     }
+
+    ul#contacts-list {
+        gap: 10%
+    }
     
     ul#contacts-list > li > a > img {
-        width: 35px;
+        width: 55px;
     }
 }
 

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="65"
+   height="48"
+   fill="currentColor"
+   class="bi bi-envelope"
+   viewBox="0 0 65 48"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="hover.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="6.5390625"
+     inkscape:cx="18.962963"
+     inkscape:cy="20.721625"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <g
+     id="g1"
+     transform="matrix(0.70884616,0,0,0.70884616,32.488293,-2.3054168)"
+     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.53956;stroke-dasharray:none;stroke-opacity:1">
+    <rect
+       style="display:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.53956;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="25.234861"
+       height="25.654379"
+       x="19.88735"
+       y="3.9958155"
+       ry="5.6583815"
+       rx="6.4951253" />
+    <path
+       fill="none"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-width="2.05263"
+       d="m 20.148527,14.601079 v -3.421052 c 0,-2.2578952 1.847368,-4.1052642 4.105263,-4.1052642 h 6.842105"
+       id="path1"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.53956;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       fill="none"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-width="2.05263"
+       d="m 42.043264,18.022132 v 6.842105 c 0,2.257895 -1.847369,4.105263 -4.105264,4.105263 H 24.25379 c -2.257895,0 -4.105263,-1.847368 -4.105263,-4.105263 v -4.789474"
+       id="path2-9"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.53956;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="31.780106"
+       x2="44.095894"
+       y1="17.337921"
+       y2="5.0221314"
+       fill="none"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-width="2.05263"
+       id="line2"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.53956;stroke-dasharray:none;stroke-opacity:1" />
+    <polyline
+       fill="none"
+       stroke="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       stroke-width="3"
+       points="27.5,6.5 41.5,6.5 41.5,20.5"
+       id="polyline2"
+       transform="matrix(0.68421053,0,0,0.68421053,15.701158,0.5747628)"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:5.1732;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>
