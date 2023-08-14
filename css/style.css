@@ -521,16 +521,18 @@ footer {
     display: flex;
     justify-content: space-around;
     background-image: url("/img/backgroundFooter.png");
-    background-size: 60%;
+    background-size: 100%%;
     background-repeat: repeat-x;
     padding-top: 0px;
     min-height: 100px;
     font-size: 12pt;
+    gap: 10%
 
 }
 
 #credits {
     text-align: right;
+    padding-right: 25px;
 }
 
 footer a:link, a:visited, a:active {
@@ -549,10 +551,11 @@ footer a:link, a:visited, a:active {
  }
 
  footer > div {
-    display: flex;
-    align-items: start;
+    display: grid;
+    width: fit-content;
     
  }
+
 
  footer > div > p {
     font-size: 12pt;
