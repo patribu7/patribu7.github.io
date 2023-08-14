@@ -60,7 +60,7 @@ var projects =
             "textDescription": "Realizzato come compito per Start 2 Impact University",
             "image": "img/projects/this_site.svg",
             "externalLink": "",
-            "tags": ["Inkscape", "Html&Css", "JavaScript", "Gimp"],
+            "tags": ["Inkscape", "Html-Css", "JavaScript", "Gimp"],
         }
     };
 
@@ -171,7 +171,7 @@ viewAllProjs.addEventListener('click', function() {
 // ---------------------skills card-------------------------//
 
 deckDiv = document.getElementById("deck");
-let deckProgrammer = ['python', 'javascript', 'Html&Css', 'Google Apps<br/>Script', 'raspberry Pi', 'lua'];
+let deckProgrammer = ['python', 'javascript', 'Html-Css', 'Google Apps Script', 'raspberry Pi', 'lua'];
 let deckDesigner = ['gimp', 'inkscape', 'OBS Studio'];
 let deckPlatform = ['telegram', 'twitch' ]
 let cards = [];
