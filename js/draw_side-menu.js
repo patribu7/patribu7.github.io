@@ -1046,15 +1046,18 @@ var lightPosition = 'rgb(124, 107, 29)';
 function drawLines() {
     for (var i = 0; i < sideMenu.length; i++) {
             var id = sideMenu[i].parentNode.id;
-            if (id != "contacts") {
-               // rileva la corrispondenza dizionario
-               sideMenu[i].innerHTML = sections[id] + straightLines;
-            } else if (id === "contacts") {
-               sideMenu[i].innerHTML = connectionsToContacts;
-            };
-   };
-   profileLinesPlace.innerHTML = profileLines;
+            switch (id) {
+               case ('contacts'):
+                 
+                  sideMenu[i].innerHTML = connectionsToContacts;
+                  break
 
+               default:
+                  sideMenu[i].innerHTML = sections[id] + straightLines;
+            }
+   };
+
+   profileLinesPlace.innerHTML = profileLines;
 
 };
 
