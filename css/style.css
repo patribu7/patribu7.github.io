@@ -188,8 +188,8 @@ section {
 }
 
 .col-right, .col-left {
-    padding: 40px;
-    min-width: 470px;
+    padding: 5px;
+    min-width: 400px;
 }
 
 .col-right > div {
