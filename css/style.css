@@ -467,7 +467,7 @@ width: calc(80% - 50px);
 
 .menu-items > li > a > span {
     font-size: 21pt;
-    color: gray;
+    color: rgb(87, 87, 87);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-decoration: none;
