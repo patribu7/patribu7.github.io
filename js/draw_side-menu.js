@@ -1083,7 +1083,7 @@ function lightControl(el, type, color) {
 };
 
 // add events listener to menu items
-function addEventListenerToitemsHover() {
+function addEventListenerToItemsHover() {
    for (var i = 0; i < itemsHover.length; i++) {
       
       itemsHover[i].addEventListener("mousedown", function() {     
@@ -1125,4 +1125,4 @@ function addEventListenerToitemsHover() {
 };
 
 drawLines();
-addEventListenerToitemsHover();
+addEventListenerToItemsHover();
