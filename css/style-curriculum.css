@@ -2,9 +2,27 @@ body {
     background-size: auto;
 }
 
+section {
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+ 
+}
+
 #tree {
     position: absolute;
-    top: 50px
+    top: 60px
+}
+
+#tree-device {
+    display: none;
+    position: absolute;
+    top: 60px
 }
 
 .li-row {
@@ -15,11 +33,12 @@ body {
 
 .li-element {
     width: 200px;
-
+    
 }
 
 .ul {
     row-gap: 24px;
+    margin: 20px
 }
 
 .ul > :nth-child(odd) > .li-element > p {
@@ -37,4 +56,35 @@ body {
 
 footer {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 844px) {
+    #tree {
+        display: none;
+
+    }
+    #tree-device {
+        display: block;
+        right: 0px
+    }
+
+    .void {
+        display: none;
+    } 
+
+    section {
+        justify-content: left;
+    }
+    .li-row {
+        display: block;
+        width: 100%;
+        margin-bottom: 153px;
+    }
+    
+    .ul > :nth-child(odd) > .li-element > p {
+        text-align: left;
+    }
+    .title {
+        justify-content: end;
+    }
 }
