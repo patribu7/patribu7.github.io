@@ -1,0 +1,40 @@
+body {
+    background-size: auto;
+}
+
+#tree {
+    position: absolute;
+    top: 50px
+}
+
+.li-row {
+    width: 800px;
+    gap: 70px;
+    align-items: end;
+}
+
+.li-element {
+    width: 200px;
+
+}
+
+.ul {
+    row-gap: 24px;
+}
+
+.ul > :nth-child(odd) > .li-element > p {
+    text-align: right;
+}
+
+.date {
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.exp {
+    color: black;
+}
+
+footer {
+    margin-top: 100px;
+}
