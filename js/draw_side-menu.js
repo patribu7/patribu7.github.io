@@ -1036,7 +1036,7 @@ var sections = {
 
 // variabili globali
 var sideMenu = document.getElementsByClassName("side-menu");
-var menuItems = document.querySelectorAll(".menu-items>li>a");
+var itemsHover = document.querySelectorAll(".itemHover");
 var profileLinesPlace = document.getElementById('linesProfile');
 
 var lightOn = 'rgb(0, 200, 255)';
@@ -1083,10 +1083,10 @@ function lightControl(el, type, color) {
 };
 
 // add events listener to menu items
-function addEventListenerToMenuItems() {
-   for (var i = 0; i < menuItems.length; i++) {
+function addEventListenerToitemsHover() {
+   for (var i = 0; i < itemsHover.length; i++) {
       
-      menuItems[i].addEventListener("mousedown", function() {     
+      itemsHover[i].addEventListener("mousedown", function() {     
          var destinationPage = getTypeOfItemMenu(this);
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
@@ -1095,7 +1095,7 @@ function addEventListenerToMenuItems() {
 
       });
  
-      menuItems[i].addEventListener("mouseup", function() {
+      itemsHover[i].addEventListener("mouseup", function() {
          var destinationPage = getTypeOfItemMenu(this);
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
@@ -1103,7 +1103,7 @@ function addEventListenerToMenuItems() {
          lightControl(headerSelected, "header", lightPosition);
       });
       
-      menuItems[i].addEventListener("mouseover", function() {     
+      itemsHover[i].addEventListener("mouseover", function() {     
          var destinationPage = getTypeOfItemMenu(this);
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
@@ -1112,7 +1112,7 @@ function addEventListenerToMenuItems() {
 
       });
 
-      menuItems[i].addEventListener("mouseout", function() {     
+      itemsHover[i].addEventListener("mouseout", function() {     
          var destinationPage = getTypeOfItemMenu(this);
          var linesSelected = selectLinesBy(destinationPage);
          var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
@@ -1125,4 +1125,4 @@ function addEventListenerToMenuItems() {
 };
 
 drawLines();
-addEventListenerToMenuItems();
+addEventListenerToitemsHover();
