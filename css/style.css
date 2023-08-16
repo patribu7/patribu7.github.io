@@ -49,7 +49,7 @@ li {
 
 /*set background image*/
 body {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-size: contain;
     background-attachment: scroll;
     background-position: initial;
