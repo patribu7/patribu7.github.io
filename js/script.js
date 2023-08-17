@@ -177,12 +177,12 @@ let deckDesigner = ['gimp', 'inkscape', 'OBS Studio'];
 let deckPlatform = ['telegram', 'twitch' ]
 let cards = [];
 
-function cleanCharsetToUrl(char) {
-    let urlChar
-    urlChar = char.replaceAll(' ', '-');
-    urlChar = urlChar.replaceAll('<br/>', '-');
-    urlChar = urlChar.toLowerCase
-    return urlChar
+function cleanCharsetToUrl(charset) {
+    let urlCharset
+    urlCharset = charset.toLowerCase();
+    urlCharset = urlCharset.replaceAll(' ', '-');
+    urlCharset = urlCharset.replaceAll('<br/>', '-');
+    return urlCharset
 };
 
 function addToDeck(skill, type) {
@@ -196,8 +196,7 @@ function addToDeck(skill, type) {
     for (var project in projects) {
         for (var index_tag in projects[project].tags) {
             var tag = projects[project].tags[index_tag]
-            var textSkill = skill.replaceAll('<br/>', ' ');
-            if (textSkill.toLowerCase() === tag.toLowerCase()) {
+            if (cleanCharsetToUrl(skill) === cleanCharsetToUrl(tag)) {
                 num++                    
             }
         }
