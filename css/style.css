@@ -525,7 +525,7 @@ width: calc(80% - 50px);
 
 ul#contacts-list > li> a > img {
     width: 70px;
-    opacity: 0.5;  
+    opacity: 0.5; 
 }
 
 ul#contacts-list > li:hover, ul#contacts-list > li:active{

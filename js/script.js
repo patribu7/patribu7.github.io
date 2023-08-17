@@ -14,7 +14,7 @@ var projects =
             Realizzato ato con Google fogli con funzioni automatiche in GoogleScript
             `,
             "image": "img/projects/irma.svg",
-            "externalLink": "",
+            "externalLink": "projects-demo/demo-irma.png",
             "tags": ["Google Docs", "Google Apps Script"],
         },
     
@@ -23,7 +23,7 @@ var projects =
             "textOverview": "Invia un messaggio Telegram alla pressione di un bottone",
             "textDescription": "Fatto per esercizio con Raspbarry Pi, bot di Telegram e Python",
             "image": "img/projects/button_pressed.svg",
-            "externalLink": "",
+            "externalLink": "projects-demo/demo-button.mp4",
             "tags": ["python", "telegram", "raspberry Pi", "esercizi"],
     
         },
@@ -41,7 +41,7 @@ var projects =
             "textOverview": "Un clone di Snake",
             "textDescription": "Un esercizio su pygame. Ancora in fase di completamento, ma funzionante.",
             "image": "img/projects/spake.svg",
-            "externalLink": "",
+            "externalLink": "https://github.com/patribu7/Spake",
             "tags": ["python", "pygame", "esercizi"],
     
         },
@@ -50,7 +50,7 @@ var projects =
             "textOverview": "deathcounter per Twitch",
             "textDescription": "Un sempice contatore da implemantare facilmente in OBS Studio per tenere il conto durante le dirette Twitch",
             "image": "img/projects/contatore_lua.svg",
-            "externalLink": "",
+            "externalLink": "https://github.com/patribu7/contatore-di-LupiCattivi",
             "tags": ["lua", "Twitch", "OBS Studio"],
         },
 
@@ -94,6 +94,7 @@ function create(list) {
         projectMainText.appendChild(projectTags);
         
         var projectExternalLink = createElement('a', 'project-external-link');
+        projectExternalLink.target = "_blank"
         projectExternalLink.href = projects[project].externalLink;
         projectExternalLink.innerHTML = 'External Link';
         projectMainText.appendChild(projectExternalLink);
