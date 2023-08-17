@@ -181,6 +181,7 @@ function cleanCharsetToUrl(char) {
     let urlChar
     urlChar = char.replaceAll(' ', '-');
     urlChar = urlChar.replaceAll('<br/>', '-');
+    urlChar = urlChar.toLowerCase
     return urlChar
 };
 
