@@ -298,7 +298,7 @@ width: calc(80% - 50px);
 
 }
 
-.filter-projects:hover, .filter-projects:focus-within {
+.filter-projects:hover, .filter-projects:active, .filter-projects:focus-within {
     overflow: visible;
     border: none;
     height: 50px;
@@ -638,10 +638,15 @@ footer a:link, a:visited, a:active {
         height: 40px;
     }
 
-    .menu-items> li > a > span {
+    .itemHover {
         font-size: 14pt;
         letter-spacing: -1.8px;
     }
+
+    .itemHover:active {
+
+    }
+
 
     .header {
         margin-top: 100px;

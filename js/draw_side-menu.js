@@ -1085,7 +1085,18 @@ function lightControl(el, type, color) {
 // add events listener to menu items
 function addEventListenerToItemsHover() {
    for (var i = 0; i < itemsHover.length; i++) {
-      
+
+      // per touchscreen
+      itemsHover[i].addEventListener("touchstart", function() {     
+         var destinationPage = getTypeOfItemMenu(this);
+         var linesSelected = selectLinesBy(destinationPage);
+         var headerSelected = document.getElementById(destinationPage).getElementsByClassName("page")[0].getElementsByClassName("header")[0];
+         lightControl(linesSelected, "lines", lightOn);
+         lightControl(headerSelected, "header", lightOn);
+
+      });
+
+      // per mouse
       itemsHover[i].addEventListener("mousedown", function() {     
          var destinationPage = getTypeOfItemMenu(this);
          var linesSelected = selectLinesBy(destinationPage);
