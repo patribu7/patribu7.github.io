@@ -298,7 +298,8 @@ width: calc(80% - 50px);
 
 }
 
-.filter-projects:hover, .filter-projects:active, .filter-projects:focus-within {
+
+.filter-box:hover > .filter-projects, .filter-box:active > .filter-projects,.filter-box:focus-within > .filter-projects {
     overflow: visible;
     border: none;
     height: 50px;
@@ -644,10 +645,6 @@ footer a:link, a:visited, a:active {
         letter-spacing: -1.8px;
     }
 
-    .menu-items > li {
-       
-    }
-
     .header {
         margin-top: 100px;
     }
@@ -655,6 +652,12 @@ footer a:link, a:visited, a:active {
     .col-left {
         display: none;
     }
+
+    .filter-projects {
+    overflow: visible;
+    border: none;
+    height: 50px;
+}
 
     #contacts {
         padding-bottom: 150px;
