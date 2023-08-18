@@ -431,11 +431,11 @@ width: calc(80% - 50px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 80px;
+        height: 88px;
     }
 
     .card > a > p {
-        font-size: 21pt;
+        font-size: 18pt;
     }
 }
 
