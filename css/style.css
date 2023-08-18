@@ -49,7 +49,7 @@ li {
 
 /*set background image*/
 body {
-    background-image: url("../img/background.webp");
+    background-image: url("../img/backgrounds/background.webp");
     background-size: contain;
     background-attachment: scroll;
     background-position: initial;
@@ -154,7 +154,7 @@ section {
 
 #bio > .page > .container {
     max-width: 100%;
-    background-image: url('../img/photoBio.png');
+    background-image: url('../img/photo-profile/photoBio.png');
     background-size: 1000px;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -553,7 +553,7 @@ ul#contacts-list > li> a > img:hover, ul#contacts-list > li> a > img:active{
 footer {
     display: flex;
     justify-content: space-around;
-    background-image: url("../img/backgroundFooter.png");
+    background-image: url("../img/backgrounds/backgroundFooter.png");
     background-repeat: repeat-x;
     padding-top: 0px;
     min-height: 100px;
@@ -631,7 +631,7 @@ footer a:link, a:visited, a:active {
         flex-direction: row;
         transform: none;
         align-items: center;
-        background-image: url('../img/backgroundMenu.png');
+        background-image: url('../img/backgrounds/backgroundMenu.png');
         background-size: cover;
         top: 0;
         left: 0;
