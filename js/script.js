@@ -14,7 +14,7 @@ var projects =
             Realizzato ato con Google fogli con funzioni automatiche in GoogleScript
             `,
             "image": "img/projects/irma.svg",
-            "externalLink": "projects-demo/demo-irma.png",
+            "externalLink": "https://www.canva.com/design/DAFry0ZbOv0/euCyN4GbN_23j0PaDbc46A/view?utm_content=DAFry0ZbOv0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#3",
             "tags": ["Google Docs", "Google Apps Script"],
         },
     
@@ -23,7 +23,7 @@ var projects =
             "textOverview": "Invia un messaggio Telegram alla pressione di un bottone",
             "textDescription": "Fatto per esercizio con Raspbarry Pi, bot di Telegram e Python",
             "image": "img/projects/button_pressed.svg",
-            "externalLink": "projects-demo/demo-button.mp4",
+            "externalLink": "https://www.canva.com/design/DAFrzJ-N-cA/Lx8VxqYAysXGE9Et3ZP_TQ/watch?utm_content=DAFrzJ-N-cA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
             "tags": ["python", "telegram", "raspberry Pi", "esercizi"],
     
         },
