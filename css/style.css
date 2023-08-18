@@ -626,27 +626,27 @@ footer a:link, a:visited, a:active {
     }
 
     .menu-items {
-        background-image: url('../img/backgroundMenu.png');
-        background-size: cover;
+        display: flex;
         flex-direction: row;
         transform: none;
-        display: flex;
+        align-items: center;
+        background-image: url('../img/backgroundMenu.png');
+        background-size: cover;
         top: 0;
         left: 0;
         width: unset;
         justify-content: space-around;
-        height: 40px;
+        height: 50px;
     }
 
-    .itemHover {
+    .menu-items > li > a > span {
         font-size: 14pt;
         letter-spacing: -1.8px;
     }
 
-    .itemHover:active {
-
+    .menu-items > li {
+       
     }
-
 
     .header {
         margin-top: 100px;
