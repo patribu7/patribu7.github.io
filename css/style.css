@@ -17,6 +17,7 @@ h1 {
 .my-name {
     font-size: 23pt;
     margin-top: -7px;
+    text-align: center;
 }
 
 
@@ -54,6 +55,11 @@ body {
     background-attachment: scroll;
     background-position: initial;
     overflow: overlay;
+}
+
+.body-child {
+    
+    background-size: auto;
 }
 
 /* scrollbar */
@@ -202,6 +208,7 @@ section {
 .col-right > div {
     margin-bottom : 10px;
     align-items: center;
+    width: 100%;
 }
 
 .project {
@@ -653,6 +660,10 @@ footer a:link, a:visited, a:active {
         display: none;
     }
 
+    .col-left, .col-right {
+        min-width:100%
+    }
+
     .filter-projects {
     overflow: visible;
     border: none;
@@ -669,13 +680,26 @@ footer a:link, a:visited, a:active {
 
     ul#contacts-list {
         width: 100%;
-        gap: 28px;
     }
 
     #contacts > .page > .container {
         max-width: none;
     }
 }
+
+@media screen and (max-width: 360px) {
+    
+    .menu-items > li > a > span {
+        font-size: 13pt;
+        letter-spacing: -3px;
+    }
+
+    .card > a > p {
+        font-size: 14pt;
+    }
+
+}
+
 @media screen and (max-width: 1360px) {
     #bio > .page > .container {
         background-size: 800px;
@@ -684,7 +708,8 @@ footer a:link, a:visited, a:active {
     #bioText {
         margin-right: 8%;
     }
-}    
+}
+
 @media screen and (max-width: 1200px) {
     #projects > .page> .container {
         flex-flow: column-reverse;
