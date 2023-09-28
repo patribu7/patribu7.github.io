@@ -61,6 +61,14 @@ var projects =
             "image": "img/projects/this_site.svg",
             "externalLink": "",
             "tags": ["Inkscape", "Html-Css", "JavaScript", "Gimp"],
+        },
+        "this_site": {
+            "header": "Counter JS",
+            "textOverview": "Un counter fatto interamente con JavaScript",
+            "textDescription": "Realizzato come compito per Start 2 Impact University",
+            "image": "img/projects/counter_js.svg",
+            "externalLink": "/counter/",
+            "tags": ["Html-Css", "JavaScript"],
         }
     };
 
